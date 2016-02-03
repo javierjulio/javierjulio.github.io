@@ -9,7 +9,6 @@ twitter_username: javierjulio
 github_username:  javierjulio
 
 # Build settings
-markdown: kramdown
 gems:
   - jekyll-redirect-from
 
