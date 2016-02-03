@@ -9,8 +9,14 @@ twitter_username: javierjulio
 github_username:  javierjulio
 
 # Build settings
+markdown: kramdown
+highlighter: rouge
 gems:
   - jekyll-redirect-from
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 permalink: /blog/:title/
 

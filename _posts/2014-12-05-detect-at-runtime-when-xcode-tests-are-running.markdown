@@ -22,20 +22,22 @@ This proved to work when running the app or tests in the simulator or building t
 
 As a last resort I ported the `isRunningTests` approach in the [objc.io Testing View Controllers article](http://www.objc.io/issue-1/testing-view-controllers.html) to Swift and included it in my app (the final code can be seen below). Thankfully after uploading the binary and installing the app from TestFlight it proved successful.
 
-    class AppDelegate: UIResponder, UIApplicationDelegate {
+```swift
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-      func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        if isRunningTests() {
-          // ..
-        }
-      }
-
-      func isRunningTests() -> Bool {
-        let environment = NSProcessInfo.processInfo().environment
-        let injectBundle = environment["XCInjectBundle"] as String?
-        return (injectBundle?.pathExtension == "xctest")
-      }
-
+  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    if isRunningTests() {
+      // ..
     }
+  }
+
+  func isRunningTests() -> Bool {
+    let environment = NSProcessInfo.processInfo().environment
+    let injectBundle = environment["XCInjectBundle"] as String?
+    return (injectBundle?.pathExtension == "xctest")
+  }
+
+}
+```
 
 I've seen approaches on changing build settings. I wasn't familiar with the differences in developing, building and releasing so I wanted a simple code only solution. Luckily this worked great. Be careful if using NSClassFromString in this case (releasing an app) and probably best to avoid it.
