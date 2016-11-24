@@ -1,3 +1,15 @@
+@function rem($size) {
+  $remSize: $size / 16;
+  @return $remSize * 1rem;
+}
+
+.link {
+  font-size: rem(20); /* this equals 20px and so on */
+  line-height: rem(26);
+  border: rem(2) solid #bada55;
+}
+
+
 /**
  * Site header
  */
