@@ -9,6 +9,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    autoprefixer-rails (6.3.7)
+      execjs
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -85,6 +87,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-autoprefixer (1.0.1)
+      autoprefixer-rails (~> 6.3.6)
     jekyll-avatar (0.4.2)
       jekyll (~> 3.0)
     jekyll-coffeescript (1.0.1)
@@ -195,6 +199,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 134)
+  jekyll-autoprefixer
 
 RUBY VERSION
    ruby 2.3.1p112
