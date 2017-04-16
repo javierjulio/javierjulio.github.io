@@ -1,0 +1,67 @@
+// Our variables
+$base-font-size: 19px;
+$rem-base: $base-font-size;
+$base-line-height: 1.5;
+$base-line-height-computed: $base-font-size * $base-line-height;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$base-text-color: #34495E;
+
+$base-font-family: 'Lato', 'Helvetica Neue', Helvetica, Calibri, Arial, serif;
+
+$heading-font-family: 'Lato', sans-serif; // Merriweather
+$heading-font-weight: $font-weight-normal;
+$heading-line-height: 1.1;
+
+/**
+ * Spacing (for margins and padding).
+ */
+$base-spacing-unit: rem-calc($base-line-height-computed);
+$double-spacing-unit: rem-calc($base-line-height-computed * 2);
+$quadruple-spacing-unit: rem-calc($base-line-height-computed * 4);
+$half-spacing-unit: rem-calc($base-line-height-computed / 2);
+$quarter-spacing-unit: rem-calc($base-line-height-computed / 4);
+
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+$giga-size: 96px;
+$mega-size: 72px;
+$kilo-size: 48px;
+
+$h1-font-size: rem-calc(62); // .alpha
+$h2-font-size: rem-calc(44); // .beta
+$h3-font-size: rem-calc(37); // .gamma
+$h4-font-size: rem-calc(27); // .delta
+$h5-font-size: rem-calc(23); // .epsilon
+$h6-font-size: 1rem; // .zeta
+
+// We use these to control header size reduction on small screens
+$h1-font-reduction: rem-calc(17);
+$h2-font-reduction: rem-calc(11);
+$h3-font-reduction: rem-calc(7);
+$h4-font-reduction: rem-calc(5);
+$h5-font-reduction: 0;
+$h6-font-reduction: 0;
+
+$milli-size: 12px;
+$micro-size: 10px;
+
+// Media Query Ranges
+$small-range: (0em, 40em);
+$medium-range: (40.063em, 64em);
+$large-range: (64.063em, 90em);
+$xlarge-range: (90.063em, 120em);
+$xxlarge-range: (120.063em, 99999999em);
+
+$screen: "only screen";
+
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
