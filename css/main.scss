@@ -1,49 +1,28 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
-* {
+@import "functions";
+@import "variables";
+@import "normalize";
+
+html {
   box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-/*
 
-body {
-  background-color: #fff;
-  color: $base-text-color;
-  font-family: $base-font-family;
-  font-size: 18px;
-  font-weight: $font-weight-light;
-  line-height: $base-line-height;
-
-  //18 * 1.4 = 25.2 - 18 = 7.2 / 10 = 0.72 - 2
-//   test: (convert-to-rem($base-font-size) * $base-line-height - (convert-to-rem($base-font-size) / 10)) - 2;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-*/
-
-// Our variables
-$base-font-family: Lato, Helvetica, Arial, sans-serif;
-$base-font-size:   18px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #34495E;
-$background-color: #fff;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -52,17 +31,375 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
+// .post-title {
+//     font-size: 42px;
+//     letter-spacing: -1px;
+//     line-height: 1;
+
+//     @include media-query($on-laptop) {
+//         font-size: 36px;
+//     }
+// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
+body {
+  background-color: #fff;
+  color: $base-text-color;
+  font-family: $base-font-family;
+  font-size: 18px;
+  font-weight: $font-weight-light;
+  line-height: $base-line-height;
+  margin: 0;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  margin-bottom: 0.3em;
+  margin-top: 0;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+a:link, a:visited {
+	color: #C0392B; //#BB4B39 #0098c6
+	text-decoration: none;
+}
+
+a:link, a:hover {
+  transition: color 0.5s ease;
+}
+
+a:hover {
+	//color: #BB4B39;
+	text-decoration: underline;
+}
+
+p {
+  margin: 0 0 $base-spacing-unit 0;
+}
+
+pre, code {
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+  font-family: Menlo, Monaco, 'Courier New', monospace;
+}
+
+code {
+  font-size: 1rem;
+  padding: .2em .3em;
+  white-space: nowrap;
+}
+
+pre {
+  line-height: 1.3;
+  margin: 0 0 $base-spacing-unit 0;
+  overflow: auto;
+  padding: $half-spacing-unit;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+blockquote {
+  border-left: 3px solid #dfdfdf;
+  color: #727B81;
+  margin: 0 0 0 2px;
+  padding: 0 $half-spacing-unit;
+}
+
+ul, ol {
+  margin: 0 0 $base-spacing-unit 0;
+}
+
+ul {
+  padding: 0 0 0 $base-spacing-unit;
+}
+
+ol {
+  padding: 0 0 0 1.8em;
+}
+
+// h1, .heading-1 { font-size: $h1-font-size - $h1-font-reduction; }
+// h2, .heading-2 { font-size: $h2-font-size - $h2-font-reduction; }
+// h3, .heading-3 { font-size: $h3-font-size - $h3-font-reduction; }
+// h4, .heading-4 { font-size: $h4-font-size - $h4-font-reduction; }
+// h5, .heading-5 { font-size: $h5-font-size - $h5-font-reduction; }
+// h6, .heading-6 { font-size: $h6-font-size - $h6-font-reduction; }
+
+h1, .heading-1 { font-size: $h1-font-size; }
+h2, .heading-2 { font-size: $h2-font-size; }
+h3, .heading-3 { font-size: $h3-font-size; }
+h4, .heading-4 { font-size: $h4-font-size; }
+h5, .heading-5 { font-size: $h5-font-size; }
+h6, .heading-6 { font-size: $h6-font-size; }
+
+.hN {
+  margin-bottom: 0;
+}
+
+// @media #{$medium-up} {
+//   h1 { font-size: $h1-font-size; }
+//   h2 { font-size: $h2-font-size; }
+//   h3 { font-size: $h3-font-size; }
+//   h4 { font-size: $h4-font-size; }
+//   h5 { font-size: $h5-font-size; }
+//   h6 { font-size: $h6-font-size; }
+// }
+
+.c1 {
+//   font-size: 1.125rem; // 22px
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+.navbar {
+  background-color: #34495E;
+//   margin-bottom: 5em;
+  padding: 0;
+}
+
+.nav {
+  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-left: 0;
+  list-style: none;
+
+  > li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+
+    > a {
+      position: relative;
+      display: inline-block;
+      padding: 14px 15px;
+      transition: all 0.3s ease;
+//       border: 1px solid transparent;
+      color: white;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        background-color: lighten(#34495E, 8%) ; // #337ab7
+//         border: 1px solid #3498DB;
+      }
+    }
+  }
+}
+
+.content-container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-header {
+  background-color: #f5f4f2;
+  margin-bottom: 3em;
+  padding-bottom: 5em;
+  padding-top: 5em;
+
+  h1 {
+    margin-top: 0;
+
+    a {
+      color: $base-text-color;
+      padding: 0;
+    }
+  }
+
+  h2 {
+    // font-size: $h4-font-size;
+    font-weight: $font-weight-light;
+    // line-height: 1.3;
+  }
+
+}
+
+@media only screen and (min-width: 567px) {
+  body {
+    font-size: $base-font-size;
+  }
+
+  .c1 {
+//     font-size: 1.25rem;
+  }
+  .site-header h2 {
+//     padding: 0 3em;
+  }
+}
+
+@media only screen and (min-width: 759px) {
+  .c1 {
+//     font-size: 1.375rem;
+    max-width: 740px;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+
+}
+
+// We use these as default colors throughout
+/*
+$primary-color: #008CBA !default;   // bondi-blue
+$secondary-color: #f8f8f8 !default; // white-lilac
+$alert-color: #f04124 !default;     // cinnabar
+$success-color: #43AC6A !default;   // sea-green
+$warning-color: #f08a24 !default;   // carrot
+$info-color: #a0d3e8 !default;      // cornflower
+*/
+
+.is-print-only {
+  display: none;
+}
+
+/* layout
+--------------------------------------------- */
+
+/*
+.container {
+  margin: 0 auto;
+  max-width: 660px;
+  width: 90%;
+}
+*/
+
+.site-container {
+  animation: fadein 0.4s 0s ease-in;
+  margin: 0 auto;
+  max-width: 700px;
+  opacity: 1;
+  width: 90%;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo {
+  font-family: $base-font-family;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  color: #9EA7AE;
+  font-size: $h5-font-size;
+  margin-top: $double-spacing-unit;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  display: block;
+  margin: 41px auto 41px auto;
+  width: 120px;
+}
+
+/* blog specific styles
+--------------------------------------------- */
+.blog-post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-info {
+  margin-bottom: 2rem;
+}
+
+.post-header {
+  margin: 120px auto 20px auto;
+  text-align: center;
+
+  @media only screen and (max-width: 767px) {
+    margin: 50px auto 30px auto;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .post-header + .divider {
+    display: none;
+  }
+}
+
+.post-date,
+.post-subscribe-message {
+  display: block;
+  color: #9EA7AE;
+  font-size: 0.85em;
+}
+
+.post-header a,
+.post-info a,
+.recipe-title a {
+  color: $base-text-color;
+
+  &:hover {
+    color: #C0392B;
+  }
+}
+
+// .blog-archives {
+//   &, li {
+//     list-style: none;
+//     margin-bottom: $base-spacing-unit;
+//     padding-left: 0;
+//   }
+
+//   .post-date {
+
+//   }
+// }
+
+.resume-section-heading {
+  margin: $double-spacing-unit 0 $base-spacing-unit 0;
+}
+
+.job-title {
+  font-size: 24px;
+  margin-bottom: 0.2em;
+}
+
+.job-date {
+  color: #9EA7AE;
+  font-size: 0.85rem;
+  font-weight: $font-weight-normal;
+  margin: 0 0 0.8em 0;
+  text-transform: uppercase;
+}
+
+.self-portrait {
+  border-radius: 3px;
+  float: left;
+  margin: 0 $half-spacing-unit $quarter-spacing-unit 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+@import "syntax-highlighting";
+@import "print";
