@@ -1,15 +1,29 @@
----
-layout: default
----
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="c1">
+      <div class="content" role="main">
+        <div class="post">
+          <header class="post-header">
+            <h1 class="heading-2">{{ page.title }}</h1>
+            <!--
+            <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+              Published on {{ page.date | date: "%B %-d, %Y" }}
+            </time>
+            -->
+          </header>
+          <hr class="divider">
+          {{ content }}
+          <p class="post-subscribe-message">
+            Enjoyed the read?
+            <a href="https://twitter.com/{{ site.twitter_username }}">Follow me on Twitter</a>
+            or <a href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">subscribe to my feed</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

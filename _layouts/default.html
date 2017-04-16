@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="site-header">
+      <div class="content-container">
+        <h1 class="logo"><a href="/">Javier Julio</a></h1>
+        <h2 class="heading-4">A Brooklyn based <a href="/resume">full stack software engineer</a> with an eye for design and details. Say <a href="mailto:jjfutbol@gmail.com">hello</a>.. &rarr; <a href="/about">About Me</a></h2>
+      </div>
+    </div>
+    <div class="c1">
+      <div class="content" role="main">
         {{ content }}
       </div>
     </div>
-
     {% include footer.html %}
-
   </body>
-
 </html>
