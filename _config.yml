@@ -4,7 +4,7 @@ email: jjfutbol@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A Brooklyn based full stack software engineer with an eye for design and details.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.javier-julio.com" # the base hostname & protocol for your site
+url: "http://www.javierjulio.com" # the base hostname & protocol for your site
 twitter_username: javierjulio
 github_username:  javierjulio
 
