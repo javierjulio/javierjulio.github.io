@@ -11,7 +11,7 @@ github_username:  javierjulio
 # Build settings
 markdown: kramdown
 highlighter: rouge
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-autoprefixer
 
