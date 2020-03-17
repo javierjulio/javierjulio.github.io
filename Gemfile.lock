@@ -9,7 +9,7 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    autoprefixer-rails (9.5.1)
+    autoprefixer-rails (9.7.4)
       execjs
     coffee-script (2.4.1)
       coffee-script-source
@@ -253,4 +253,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   1.17.3
+   2.0.2
