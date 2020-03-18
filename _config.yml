@@ -28,3 +28,6 @@ collections:
   recipes:
     output: true
     permalink: /recipes/:path/
+  presentations:
+    output: true
+    permalink: /presentations/:path/
