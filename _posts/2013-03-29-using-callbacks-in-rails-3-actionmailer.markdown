@@ -13,9 +13,9 @@ The example below shows how I resolved an issue where I needed to change the rec
 
     class Mailer < ActionMailer::Base
       include AbstractController::Callbacks
-      
+
       after_filter :send_to_admin_if_staging
-      
+
       def send_to_admin_if_staging
         if Rails.env.staging?
           message.to = 'admin@my-app.com'
@@ -23,10 +23,10 @@ The example below shows how I resolved an issue where I needed to change the rec
       end
     end
 
-Besides access to `message` we also have access to `mail` in callbacks. This is useful if you prefer to [stop email delivery](https://coderwall.com/p/mwrsvw) or perhaps change other mail settings.
+Besides access to `message` we also have access to `mail` in callbacks. This is useful if you prefer to [stop email delivery](https://coderwall.com/p/mwrsvw/rails-4-before_filter-and-after_filter-in-your-mailers) or perhaps change other mail settings.
 
     after_filter :stop_delivery_if_staging
-    
+
     def stop_delivery_if_staging
       if Rails.env.staging?
         mail.perform_deliveries = false

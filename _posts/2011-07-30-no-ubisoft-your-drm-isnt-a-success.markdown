@@ -5,7 +5,7 @@ date:   2011-07-30
 redirect_from: /2011/07/30/no-ubisoft-your-drm-isnt-a-success/
 ---
 
-[Luke Plunkett](http://kotaku.com/5825822/ubisoft-thinks-its-pc-drm-is-a-success-it-is-wrong"):
+[Luke Plunkett](https://kotaku.com/ubisoft-thinks-its-pc-drm-is-a-success-it-is-wrong-5825822):
 
 > Yet by placing ridiculous restrictions on paying, loyal customers, Ubisoft surely dissuades people from buying its games. With piracy an issue that will never go away, isn't that what the company should be worried about?
 
