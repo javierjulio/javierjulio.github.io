@@ -31,8 +31,8 @@ def baseurl
 end
 
 task :build do
-  # system "rm -rf #{jekyll_site_directory}"
-  system "bundle exec jekyll build --incremental"
+  system "rm -rf #{jekyll_site_directory}"
+  system "bundle exec jekyll build"
 end
 
 task test: :build do
