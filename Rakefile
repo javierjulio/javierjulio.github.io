@@ -35,6 +35,12 @@ task :build do
   system "bundle exec jekyll build"
 end
 
+task :server do
+  system "bundle exec jekyll serve --port 5000 --open-url --livereload"
+end
+task serve: :server
+task s: :server
+
 task test: :build do
   run_html_proofer(
     cache: {
