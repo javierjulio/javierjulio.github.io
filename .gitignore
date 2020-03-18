@@ -38,3 +38,4 @@ build/
 _site/
 *.swp
 .sass-cache
+.jekyll-metadata
