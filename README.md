@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/javierjulio/javierjulio.github.io.svg?branch=master)][travis]
+![CI Build](https://github.com/javierjulio/javierjulio.github.io/workflows/CI%20Build/badge.svg)
 
-[travis]: https://travis-ci.org/javierjulio/javierjulio.github.io
 
 # Testing site in Jekyll
 
