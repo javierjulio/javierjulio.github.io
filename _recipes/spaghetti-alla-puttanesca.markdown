@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Spaghetti alla Puttanesca
-description: New York Top Sirloin steak served with a home made marinate sauce.
+description: Spaghetti pasta served with black olives, tomatoes and capers but as an uncooked version of the famous Neapolitan dish.
 date:   2015-08-02 16:59:02
 ---
 
