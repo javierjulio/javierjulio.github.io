@@ -27,8 +27,8 @@ Ember Talk
 - Code setup: jQuery, Handlebars, Ember, Ember Data
 - Code demo
 - Resources
--	http://emberjs.com/guides/concepts/naming-conventions/
--	http://www.youtube.com/watch?v=u6RFyVN9sNg
--	http://slid.es/ryanto/prototyping-ember-applications
--	http://ryanto.github.io/#posts/prototyping-ember-applications
--	http://www.youtube.com/watch?v=ysduY0ocUoA&t=59m55s
+-	https://emberjs.com/guides/concepts/naming-conventions/
+-	https://www.youtube.com/watch?v=u6RFyVN9sNg
+-	https://slid.es/ryanto/prototyping-ember-applications
+-	https://ryanto.github.io/#posts/prototyping-ember-applications
+-	https://www.youtube.com/watch?v=ysduY0ocUoA&t=59m55s

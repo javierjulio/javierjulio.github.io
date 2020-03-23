@@ -10,8 +10,8 @@ https://developer.mozilla.org/en-US/docs/CSS/Pseudo-elements
 https://developer.mozilla.org/en-US/docs/CSS/::after
 https://developer.mozilla.org/en-US/docs/CSS/:not
 
-http://css-tricks.com/pseudo-class-selectors/
-http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/
+https://css-tricks.com/pseudo-class-selectors/
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
 
 
 - Intro
@@ -47,7 +47,7 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
 
 .nav-divided {
   > li:after {
-    content: "\2022"; // same as &#8226; in HTML (converter: http://www.evotech.net/articles/testjsentities.html)
+    content: "\2022"; // same as &#8226; in HTML
     margin: 0 5px;
   }
 
@@ -61,7 +61,7 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
 
 .nav-divided {
   > li + li:before {
-    content: "\2022"; // same as &#8226; in HTML (converter: http://www.evotech.net/articles/testjsentities.html)
+    content: "\2022"; // same as &#8226; in HTML
     margin: 0 5px;
   }
 }
@@ -92,8 +92,8 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
 
 
 
-/* using :not this whole selector only applies to browsers that support 
-   :checked, otherwise older browsers will just see plain checkboxes 
+/* using :not this whole selector only applies to browsers that support
+   :checked, otherwise older browsers will just see plain checkboxes
    with text labels so its still functional and usable */
 .checkbox-item:not(:checked) {
   display: inline-block;
@@ -101,7 +101,7 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
   margin: 0 7px 10px 0;
   position: relative;
   width: 40px;
-  
+
   label {
     background-color: #e6e6e6;
     border: 1px solid #d9d9d9;
@@ -110,7 +110,7 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
     height: 100%;
     text-indent: -9999px;
     width: 100%;
-    
+
     &:before {
       background: transparent image-url('sprite-sharing.png') no-repeat;
       content: "";
@@ -119,11 +119,11 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
       margin: 4px 0 0 4px; /* horizontally and vertically centered, deduct 1 for borders */
       width: 30px;
     }
-    
+
     &.facebook:before {
       background-position: 0 0;
     }
-    
+
     &.twitter:before {
       background-position: -30px 0;
     }
@@ -131,12 +131,12 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
     &.tumblr:before {
       background-position: -60px 0;
     }
-    
+
     &.linkedin:before {
       background-position: -90px 0;
     }
   }
-  
+
   input {
     bottom: 0;
     cursor: pointer;
@@ -148,38 +148,38 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
     top: 0;
     width: 100%;
     z-index: 10;
-    
+
     &:checked ~ label {
       border-color: transparent;
-      
+
       &.facebook {
         @include vertical-gradient(#5c7fc9, #28447f);
         border-bottom: 1px solid #203666;
         border-top: 1px solid #6a91e5;
       }
-      
+
       &.twitter {
         @include vertical-gradient(#299be2, #154d84);
         border-bottom: 1px solid #124373;
         border-top: 1px solid #2ca6f2;
       }
-      
+
       &.tumblr {
         @include vertical-gradient(#6885a5, #324d68);
         border-bottom: 1px solid #2B4259;
         border-top: 1px solid #7090B2;
       }
-      
+
       &.linkedin {
         @include vertical-gradient(#5eacce, #00659a);
         border-bottom: 1px solid #005b8c;
         border-top: 1px solid #83d3f2;
       }
-      
+
       &.facebook:before {
         background-position: 0 -30px;
       }
-      
+
       &.twitter:before {
         background-position: -30px -30px;
       }
@@ -187,7 +187,7 @@ http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-m
       &.tumblr:before {
         background-position: -60px -30px;
       }
-      
+
       &.linkedin:before {
         background-position: -90px -30px;
       }

@@ -5,7 +5,7 @@ description: Thin strips of marinated, breaded, marinated steak that are lightly
 date:   2015-08-02 16:59:02
 ---
 
-The secret for this recipe is using Japanese breadcrumbs called [Panko](http://en.wikipedia.org/wiki/Panko). Packaged breadcrumbs or making your own just doesn't come close. Trust me. I've tried it all. I highly recommend preparing these in advance and letting them marinate for several hours or better yet overnight.
+The secret for this recipe is using Japanese breadcrumbs called [Panko](https://en.wikipedia.org/wiki/Panko). Packaged breadcrumbs or making your own just doesn't come close. Trust me. I've tried it all. I highly recommend preparing these in advance and letting them marinate for several hours or better yet overnight.
 
 ### Ingredients
 

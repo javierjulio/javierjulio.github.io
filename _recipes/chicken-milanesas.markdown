@@ -5,7 +5,7 @@ description: Chicken breast covered with breadcrumbs, parmesan cheese, and thyme
 date:   2015-08-02 16:59:02
 ---
 
-The secret for this recipe is using [Panko](http://en.wikipedia.org/wiki/Panko) (Japanese breadcrumbs). Packaged breadcrumbs or making your own just doesn't come close. Trust me. I've tried it all. As an easy side dish I suggest my [Farfalle with Spring Onions](/recipes/farfalle-with-spring-onions) recipe.
+The secret for this recipe is using [Panko](https://en.wikipedia.org/wiki/Panko) (Japanese breadcrumbs). Packaged breadcrumbs or making your own just doesn't come close. Trust me. I've tried it all. As an easy side dish I suggest my [Farfalle with Spring Onions](/recipes/farfalle-with-spring-onions) recipe.
 
 ### Ingredients
 

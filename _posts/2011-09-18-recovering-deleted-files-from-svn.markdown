@@ -17,4 +17,3 @@ As an example, lets say I wanted to retrieve a post I had deleted for my site an
     $ svn merge -r 50:49 .
 
 If you made other changes that were part of that revision they will be retrieved but are not committed so you can modify them as you like. In my case I had deleted 2 other files so I just re-deleted them, kept the one I needed and committed my changes. The revision history for the file you retain is preserved.
-    
