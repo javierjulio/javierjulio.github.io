@@ -10,6 +10,7 @@ highlighter: rouge
 plugins:
   - jekyll-autoprefixer
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 autoprefixer:
   only_production: true
