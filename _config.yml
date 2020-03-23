@@ -1,4 +1,3 @@
-# Site settings
 title: Javier Julio
 email: jjfutbol@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -6,9 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://javierjulio.com" # the base hostname & protocol for your site
 twitter_username: javierjulio
-github_username:  javierjulio
-
-# Build settings
+github_username: javierjulio
 markdown: kramdown
 highlighter: rouge
 plugins:
