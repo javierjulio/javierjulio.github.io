@@ -8,8 +8,8 @@ github_username: javierjulio
 markdown: kramdown
 highlighter: rouge
 plugins:
-  - jekyll-redirect-from
   - jekyll-autoprefixer
+  - jekyll-redirect-from
 
 autoprefixer:
   only_production: true
