@@ -47,6 +47,13 @@ task test: :build do
       timeframe: '1w'
     },
     check_html: true,
+    validation: {
+      report_eof_tags: true,
+      report_invalid_tags: true,
+      report_mismatched_tags: true,
+      report_missing_doctype: true,
+      report_missing_names: true
+    },
     # check_favicon: true,
     check_img_http: true,
     check_opengraph: true,
