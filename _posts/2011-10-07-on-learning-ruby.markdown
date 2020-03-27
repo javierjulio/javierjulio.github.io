@@ -7,15 +7,21 @@ redirect_from: /2011/10/07/on-learning-ruby/
 
 Having written so much code in AS3 I wanted to learn a similar language but that was simpler. Lighter. I had my own ideas of what I'd like in a language and I've found that Ruby has several of them. A simple example that stood out for me was defining a constant. In AS3 this requires a lot of typing that I felt could be implied.
 
-    public static const FIRST_NAME:String = "Javier"
+```
+public static const FIRST_NAME:String = "Javier"
+```
 
 In Ruby it's no different than declaring a variable but you type the name in all caps.
 
-    FIRST_NAME = "Javier"
+```
+FIRST_NAME = "Javier"
+```
 
 Short and sweet. In another example I was impressed in how expressive Ruby can be. I had been figuring out the different ways I could repeat a string when I noticed in the documentation that operators were implemented as methods. Why can't I just multiply the string by the number of times I want to repeat it? For example:
 
-    "Ruby! " * 5
+```
+"Ruby! " * 5
+```
 
 And that worked as expected! Simple things like this have made learning Ruby a joy.
 

@@ -7,11 +7,15 @@ redirect_from: /2014/01/09/matching-a-format-only-rails-route/
 
 On a recent project I noticed several errors for an invalid route requested by a search bot where the URL looked something like:
 
-    /people/123706399_571n.jpg
+```
+/people/123706399_571n.jpg
+```
 
 which in turn triggered the people show route that looks for:
 
-    /people/123-full-name
+```
+/people/123-full-name
+```
 
 Since the parsed value 123706399_571n isn't a valid person id we'd be receiving about 4-5 daily errors in Airbrake.
 

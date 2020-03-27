@@ -45,7 +45,9 @@ With Thin I found I can run it as a daemon and since I would be focusing on cont
 
 While I learned a lot from that approach it was a bit of a waste since the Foreman gem solves this problem and makes it super easy to implement. You just specify a unique name for each command (used as identifier for any command output in Terminal) in a `Procfile`. The following is what I use for my site:
 
-    web:  bundle exec shotgun --server=thin --port=3000
-    sass: bundle exec sass --watch assets/stylesheets:assets/stylesheets --style compressed
+```
+web: bundle exec shotgun --server=thin --port=3000
+sass: bundle exec sass --watch assets/stylesheets:assets/stylesheets --style compressed
+```
 
 From there I just run `foreman start` and the gem handles the rest. I started off using Thin directly but switched to the Shotgun gem (which still uses Thin) as it reloads the entire Sinatra app on every request. If you ran the app with Thin directly you'd have to restart the server anytime you make Ruby/Sinatra related changes.
