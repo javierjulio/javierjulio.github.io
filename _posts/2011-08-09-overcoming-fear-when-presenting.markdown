@@ -5,7 +5,7 @@ date:   2011-08-09
 redirect_from: /2011/08/09/overcoming-fear-when-presenting/
 ---
 
-Brett Kelly on his fear when presenting:
+[Brett Kelly](https://brettkelly.org) on his fear when presenting:
 
 > My brain moves faster than my lips and I very often turn into a yammering idiot when I get halfway through saying something before realizing that it's either unclear or inaccurate and I start quickly qualifying or rewording what I haven't even finished saying yet and it turns into a big ball of suck.
 
