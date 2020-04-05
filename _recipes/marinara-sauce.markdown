@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  Marinara or Arrabbiata Sauce
-description: A simple marinara or arrabbiata (spicy) sauce for pizza or as a dip.
+description: A simple marinara sauce for pasta or pizza.
 date:   2015-08-02 16:59:02
 ---
 
-This is a simple marinara or arrabbiata sauce for pizza or as a dip. The sauce can be refrigerated for a week or frozen for several months.
+This is a simple marinara or arrabbiata (spicy) sauce for pasta or pizza.
 
 ### Ingredients
 

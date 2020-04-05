@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  Paella
-description: This is my mother's recipe for paella. Its not very different from the typical dish just made with a lot of sofrito. One of my favorites!
+description: This is my mother's recipe. Not too different from the traditional dish, just made with a lot of sofrito.
 date:   2015-08-02 16:59:02
 ---
 
-This is my mother's recipe for paella. Its not very different from the typical dish just made with a lot of sofrito. One of my favorites. Make sure to serve with plenty of lemons!
+This is my mother's paella recipe. Not too different from the traditional dish, just made with a lot of sofrito. Make sure to serve with plenty of lemons!
 
 ### Ingredients
 
