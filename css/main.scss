@@ -119,6 +119,13 @@ h6, .heading-6 { font-size: $h6-font-size; }
   position: relative;
 }
 
+@media only screen and (min-width: 759px) {
+  .container {
+    max-width: 740px;
+    padding: 0 20px;
+  }
+}
+
 .navbar {
   background-color: #34495E;
 //   margin-bottom: 5em;
@@ -189,13 +196,6 @@ h6, .heading-6 { font-size: $h6-font-size; }
 @media only screen and (min-width: 567px) {
   body {
     font-size: $base-font-size;
-  }
-
-  .c1 {
-//     font-size: 1.25rem;
-  }
-  .site-header h2 {
-//     padding: 0 3em;
   }
 }
 
