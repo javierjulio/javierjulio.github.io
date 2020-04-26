@@ -9,18 +9,20 @@ As a Ruby developer having a local `.irbrc` file is really handy for specifying 
 
 I had kept forgetting to give it a try but today I added an `.irbrc` file (with the contents you see below) to a project repository and deployed to staging.
 
-    #!/usr/bin/ruby
-    
-    def q
-      exit
-    end
-    
-    def dj
-      Delayed::Job
-    end
-    
-    def djc
-      Delayed::Job.count
-    end
+```ruby
+#!/usr/bin/ruby
+
+def q
+  exit
+end
+
+def dj
+  Delayed::Job
+end
+
+def djc
+  Delayed::Job.count
+end
+```
 
 Just as you would expect the above methods run successfully in the Heroku console. No special configuration needed. Just a normal `.irbrc` file in the root of your git project and you're all set.
