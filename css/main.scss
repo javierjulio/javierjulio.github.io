@@ -2,8 +2,6 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@charset "utf-8";
-
 @import "functions";
 @import "variables";
 @import "normalize";
@@ -22,28 +20,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-// .post-title {
-//     font-size: 42px;
-//     letter-spacing: -1px;
-//     line-height: 1;
-
-//     @include media-query($on-laptop) {
-//         font-size: 36px;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
 }
 
 body {
@@ -127,13 +103,6 @@ ol {
   padding: 0 0 0 1.8em;
 }
 
-// h1, .heading-1 { font-size: $h1-font-size - $h1-font-reduction; }
-// h2, .heading-2 { font-size: $h2-font-size - $h2-font-reduction; }
-// h3, .heading-3 { font-size: $h3-font-size - $h3-font-reduction; }
-// h4, .heading-4 { font-size: $h4-font-size - $h4-font-reduction; }
-// h5, .heading-5 { font-size: $h5-font-size - $h5-font-reduction; }
-// h6, .heading-6 { font-size: $h6-font-size - $h6-font-reduction; }
-
 h1, .heading-1 { font-size: $h1-font-size; }
 h2, .heading-2 { font-size: $h2-font-size; }
 h3, .heading-3 { font-size: $h3-font-size; }
@@ -144,15 +113,6 @@ h6, .heading-6 { font-size: $h6-font-size; }
 .hN {
   margin-bottom: 0;
 }
-
-// @media #{$medium-up} {
-//   h1 { font-size: $h1-font-size; }
-//   h2 { font-size: $h2-font-size; }
-//   h3 { font-size: $h3-font-size; }
-//   h4 { font-size: $h4-font-size; }
-//   h5 { font-size: $h5-font-size; }
-//   h6 { font-size: $h6-font-size; }
-// }
 
 .container {
   margin: 0 auto;
@@ -252,47 +212,8 @@ h6, .heading-6 { font-size: $h6-font-size; }
 
 }
 
-// We use these as default colors throughout
-/*
-$primary-color: #008CBA !default;   // bondi-blue
-$secondary-color: #f8f8f8 !default; // white-lilac
-$alert-color: #f04124 !default;     // cinnabar
-$success-color: #43AC6A !default;   // sea-green
-$warning-color: #f08a24 !default;   // carrot
-$info-color: #a0d3e8 !default;      // cornflower
-*/
-
 .is-print-only {
   display: none;
-}
-
-/* layout
---------------------------------------------- */
-
-/*
-.container {
-  margin: 0 auto;
-  max-width: 660px;
-  width: 90%;
-}
-*/
-
-.site-container {
-  animation: fadein 0.4s 0s ease-in;
-  margin: 0 auto;
-  max-width: 700px;
-  opacity: 1;
-  width: 90%;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .logo {
@@ -361,18 +282,6 @@ $info-color: #a0d3e8 !default;      // cornflower
   }
 }
 
-// .blog-archives {
-//   &, li {
-//     list-style: none;
-//     margin-bottom: $base-spacing-unit;
-//     padding-left: 0;
-//   }
-
-//   .post-date {
-
-//   }
-// }
-
 .resume-section-heading {
   margin: $double-spacing-unit 0 $base-spacing-unit 0;
 }
@@ -388,12 +297,6 @@ $info-color: #a0d3e8 !default;      // cornflower
   font-weight: $font-weight-normal;
   margin: 0 0 0.8em 0;
   text-transform: uppercase;
-}
-
-.self-portrait {
-  border-radius: 3px;
-  float: left;
-  margin: 0 $half-spacing-unit $quarter-spacing-unit 0;
 }
 
 .text-left {
