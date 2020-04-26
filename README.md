@@ -2,7 +2,7 @@
 
 ## javierjulio.com
 
-This is a conversion of my original website from the repo [https://github.com/javierjulio/website](https://github.com/javierjulio/website) to now being built with Jekyll and deployed on GitHub Pages.
+The source code for javierjulio.com, my website built with Jekyll and deployed on GitHub Pages. This is a conversion of my original site from the now archived [website](https://github.com/javierjulio/website) repo.
 
 ### Development
 
