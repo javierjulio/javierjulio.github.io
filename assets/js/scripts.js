@@ -24,13 +24,13 @@ const updateBackToTopLink = (oldClassName, newClassName) => {
 }
 
 const onScroll = () => {
-  if (window.scrollY > 0) {
+  if (window.scrollY > 30) {
     updateBackToTopLink('fade-out', 'fade-in')
 
     clearTimeout(timeoutId)
     timeoutId = setTimeout(updateBackToTopLink, 5000, 'fade-in', 'fade-out')
   }
-  else if (window.scrollY <= 10 && timeoutId) {
+  else if (window.scrollY <= 30 && timeoutId) {
     clearTimeout(timeoutId)
 
     updateBackToTopLink('fade-in', 'fade-out')
