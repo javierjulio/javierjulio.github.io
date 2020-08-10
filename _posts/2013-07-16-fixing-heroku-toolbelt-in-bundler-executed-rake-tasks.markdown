@@ -5,7 +5,7 @@ date:   2013-07-16
 redirect_from: /2013/07/16/fixing-heroku-toolbelt-in-bundler-executed-rake-tasks/
 ---
 
-If you have any rake tasks that use the `heroku` command (should be using the [Heroku Toolbelt](https://toolbelt.heroku.com/) and not the Ruby gem) make sure to wrap any code with Bundler.with_clean_env which takes a block like in the example below:
+If you have any rake tasks that use the `heroku` command (should be using the [Heroku Toolbelt CLI](https://devcenter.heroku.com/articles/heroku-cli) and not the Ruby gem) make sure to wrap any code with Bundler.with_clean_env which takes a block like in the example below:
 
 ```ruby
 namespace :my_app do
