@@ -1,6 +1,9 @@
-title: Javier Julio
-email: jjfutbol@gmail.com
-description: "A Brooklyn based full stack software engineer with an eye for design and details."
+title: "Javier Julio"
+email: "jjfutbol@gmail.com"
+description: >-
+  A Brooklyn based full stack developer with an eye for
+  design and details. Currently, designing, building and
+  automating solutions at Jackpocket in NYC.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://javierjulio.com" # the base hostname & protocol for your site
 twitter_username: javierjulio
