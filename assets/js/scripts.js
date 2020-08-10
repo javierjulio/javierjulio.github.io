@@ -13,8 +13,6 @@ const debounce = (fn) => {
   }
 };
 
-let timeoutId;
-
 const updateBackToTopLink = (oldClassName, newClassName) => {
   const button = document.getElementById("js-back-to-top")
   if (button) {
@@ -22,6 +20,8 @@ const updateBackToTopLink = (oldClassName, newClassName) => {
     button.classList.add(newClassName)
   }
 }
+
+let timeoutId;
 
 const onScroll = () => {
   if (window.scrollY > 30) {
@@ -37,6 +37,16 @@ const onScroll = () => {
   }
 }
 
-document.addEventListener('scroll', debounce(onScroll), { passive: true });
+const button = document.getElementById("js-back-to-top")
 
-onScroll();
+if (button) {
+  document.addEventListener('scroll', debounce(onScroll), { passive: true });
+  onScroll();
+
+  if (document.documentElement.scrollIntoView) {
+    button.addEventListener('click', (event) => {
+      event.preventDefault()
+      document.documentElement.scrollIntoView({ behavior: 'smooth' })
+    })
+  }
+}
