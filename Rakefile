@@ -61,7 +61,9 @@ task test: :build do
     parallel: {
       in_processes: 3
     },
-    url_ignore: [],
+    url_ignore: [
+      /linkedin\.com/
+    ],
     url_swap: {
       /^#{baseurl}/ => ""
     }
