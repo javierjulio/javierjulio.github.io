@@ -62,7 +62,8 @@ task test: :build do
       in_processes: 3
     },
     url_ignore: [
-      /linkedin\.com/
+      /linkedin\.com/,
+      /9mmedia\.com/
     ],
     url_swap: {
       /^#{baseurl}/ => ""
