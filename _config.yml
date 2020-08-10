@@ -6,24 +6,18 @@ description: >-
   automating solutions at Jackpocket in NYC.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://javierjulio.com" # the base hostname & protocol for your site
-twitter_username: javierjulio
-github_username: javierjulio
 markdown: kramdown
 highlighter: rouge
 plugins:
   - jekyll-autoprefixer
   - jekyll-redirect-from
   - jekyll-sitemap
-
 autoprefixer:
   only_production: true
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
 permalink: /blog/:title/
-
 collections:
   recipes:
     output: true
