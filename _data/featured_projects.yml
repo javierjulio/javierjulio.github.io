@@ -1,0 +1,16 @@
+- name: RailsBridge NYC
+  url: https://www.railsbridgenyc.org
+  description: Organizing free workshops on Ruby and Rails in NYC.
+  # I'm an organizer at RailsBridge NYC, helping those underrepresented in the tech community to learn to code in Ruby and to build a Ruby on Rails app.
+
+- name: ActiveAdmin
+  url: https://github.com/activeadmin/activeadmin
+  description: Maintaining the administration framework for Ruby on Rails.
+
+- name: My <code>laptop</code> script
+  url: https://github.com/javierjulio/laptop
+  description: An automated, tested script to configure my Mac and <code>dotfiles</code>.
+
+- name: Humble Bundle Key Exporter
+  url: https://github.com/javierjulio/humble-bundle-key-exporter
+  description: A bookmarklet that exports your <a href="https://www.humblebundle.com">Humble Bundle</a> keys to JSON. 🎮

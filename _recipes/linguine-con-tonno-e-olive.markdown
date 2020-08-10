@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Linguine con Tonno e Olive
 description: A flavorful mediterranean dish with plenty of tuna, olives, anchovies, capers and parsley.
 date:   2015-08-02 16:59:02

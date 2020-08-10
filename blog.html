@@ -1,0 +1,21 @@
+---
+layout: page
+title: Javier's Blog
+page_heading: Blog Archives
+permalink: /blog/
+---
+
+<ul class="unstyled-list">
+  {% for post in site.posts %}
+    <li class="margin-bottom-2x">
+      <h2 class="heading-4 margin-bottom-half">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <time class="post-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">
+        {{ post.date | date: "%B %-d, %Y" }}
+      </time>
+    </li>
+  {% endfor %}
+</ul>

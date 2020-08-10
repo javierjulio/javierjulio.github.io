@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Fusilli Mozzarella
 description: It's like pizza but with pasta! Served with tomatoes, anchovies, capers, basil and chunks of melted mozzarella cheese.
 date:   2015-08-02 16:59:02

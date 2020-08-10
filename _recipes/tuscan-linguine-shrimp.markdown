@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Tuscan Linguine Shrimp
 description: Tuscan style linguine pasta cooked with succulent shrimp, garlic, fresh Roma tomatoes, lemon juice and basil.
 date:   2015-08-02 16:59:02

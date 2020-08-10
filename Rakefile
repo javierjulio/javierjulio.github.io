@@ -54,7 +54,7 @@ task test: :build do
       report_missing_doctype: true,
       report_missing_names: true
     },
-    # check_favicon: true,
+    check_favicon: true,
     check_img_http: true,
     check_opengraph: true,
     check_external_hash: true,

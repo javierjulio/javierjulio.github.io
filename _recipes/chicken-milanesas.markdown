@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Chicken Milanesas
 description: Chicken breast covered with breadcrumbs, parmesan cheese, and thyme leaves. This dish is lightly fried, a healthier alternative.
 date:   2015-08-02 16:59:02

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Rigatoni Italiano
 description: Called "Greek Pasta" at home because of its combination of feta cheese, fresh tomatoes, and basil.
 date:   2015-08-02 16:59:02

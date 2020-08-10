@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Italian Style Hamburgers
 description: Hamburgers stuffed with spring onions, Italian parsley, basil and garlic.
 date:   2015-06-19 16:34:19

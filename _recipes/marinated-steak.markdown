@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Marinated Steak
 description: New York Top Sirloin steak served with a home made marinate sauce.
 date:   2015-08-02 16:59:02

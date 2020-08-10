@@ -1,0 +1,56 @@
+$base-line-height: 1.6;
+
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// https://palx.jxnblk.com
+
+// light
+// $text-color: #334259; //#333;
+// $background-color: #fff;
+// $primary-color: #1A59FF;
+// $secondary-color: #ab17e6;
+// $muted-color: #f6f6f6;
+// $gray-color: #666;
+
+// dark
+// $text-color: #fff;
+// $background-color: #242828;
+// $primary-color: #ffda23;
+// $secondary-color: #69ff48;
+// $muted-color: #0c0d0d;
+// $gray-color: #bbb;
+
+$base-font-family: Inter, Lato, 'Helvetica Neue', Helvetica, Calibri, Arial, serif;
+
+$heading-font-family: Merriweather, sans-serif; // Merriweather
+$heading-font-weight: 700;
+$heading-line-height: 1.25;
+
+$base-font-size: 1rem;
+
+$h1-font-size: 2.4rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.55rem;
+$h4-font-size: 1.35rem;
+$h5-font-size: 1.15rem;
+$h6-font-size: 1rem;
+
+$z-index-back-to-top-button: 10;
+
+$media-query-breakpoints: (
+  default: 0,
+  first: 40em,
+  second: 44em // ~700 for content
+);
+
+$spacer: 1em !default;
+$spacers: (
+  0: 0,
+  half: ($spacer * .5),
+  base: $spacer,
+  2x: ($spacer * 2),
+  3x: ($spacer * 3),
+  4x: ($spacer * 4)
+) !default;

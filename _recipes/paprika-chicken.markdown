@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Paprika Chicken
 description: Boneless chicken breast baked and covered in paprika and butter.
 date:   2015-08-02 16:59:02

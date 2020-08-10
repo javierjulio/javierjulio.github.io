@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Farfalle Tonno
 description: Time consuming to prepare but worth the effort as its served with spring onions, lemon juice and zest, black olives, tuna, roasted pimientos and basil.
 date:   2015-08-02 16:59:02

@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: page
 title: Recipes
+page_heading: Recipes
 permalink: /recipes/
 redirect_from:
   - /recipes/bell-pepper-chicken/
@@ -14,8 +15,8 @@ redirect_from:
 ---
 
 {% for recipe in site.recipes %}
-  <div class="post-info">
-    <h2 class="recipe-title heading-4">
+  <div class="margin-bottom-2x">
+    <h2 class="heading-4 margin-bottom-half">
       <a href="{{ recipe.url | prepend: site.baseurl }}">{{ recipe.title }}</a>
     </h2>
     <p>{{ recipe.description }}</p>

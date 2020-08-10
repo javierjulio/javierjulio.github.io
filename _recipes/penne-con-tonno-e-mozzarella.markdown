@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Penne con Tonno e Mozzarella
 description: A cheesy, meaty dish. Similar to Linguine con Tonno e Olive but no olives, parsley or lemon juice.
 date:   2015-08-02 16:59:02

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Steak Milanesas
 description: Thin strips of marinated, breaded, marinated steak that are lightly fried.
 date:   2015-08-02 16:59:02

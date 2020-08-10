@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Farfalle with Spring Onions
 description: A little to simple for some but makes a great side dish. Goes really well with milanesas de pollo (chicken).
 date:   2015-08-02 16:59:02

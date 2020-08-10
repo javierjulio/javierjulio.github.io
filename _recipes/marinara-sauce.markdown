@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Marinara or Arrabbiata Sauce
 description: A simple marinara sauce for pasta or pizza.
 date:   2015-08-02 16:59:02

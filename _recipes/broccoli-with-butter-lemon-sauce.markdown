@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Broccoli with Lemon Butter Sauce
 description: Steamed broccoli served with a light butter sauce made with garlic, crushed red pepper and lemon juice.
 date:   2015-08-02 16:59:02

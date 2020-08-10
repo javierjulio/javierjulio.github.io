@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: recipe
 title:  Paella
 description: This is my mother's recipe. Not too different from the traditional dish, just made with a lot of sofrito.
 date:   2015-08-02 16:59:02
