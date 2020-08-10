@@ -103,7 +103,11 @@ blockquote {
 
   .description {
     font-family: $heading-font-family;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+
+    @include breakpoint(first) {
+      font-size: 1.25rem;
+    }
   }
 
   .links {
