@@ -14,7 +14,7 @@
   </a>
 </div>
 
-<script src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}?v={{ site.time | date: '%s' }}"></script>
+<script defer src="{{ "/assets/js/scripts.js" | prepend: site.baseurl }}?v={{ site.time | date: '%s' }}"></script>
 
 <script>
 document.getElementById("js-year").textContent = new Date().getFullYear();
