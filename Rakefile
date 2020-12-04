@@ -63,7 +63,8 @@ task test: :build do
     },
     url_ignore: [
       /linkedin\.com/,
-      /9mmedia\.com/
+      /9mmedia\.com/,
+      /myfdb\.com/
     ],
     url_swap: {
       /^#{baseurl}/ => ""
