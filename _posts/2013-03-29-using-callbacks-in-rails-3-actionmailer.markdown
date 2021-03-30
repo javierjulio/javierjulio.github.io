@@ -5,7 +5,7 @@ date:   2013-03-29
 redirect_from: /2013/03/29/using-callbacks-in-rails-3-actionmailer/
 ---
 
-When working with ActionMailer (Rails 3) it feels so similar to how controllers work that I thought it was odd that I couldn't use callbacks such as `before_filter` or `after_filter`. While there are [drop in gems](https://robots.thoughtbot.com/post/40822987615/delivering-all-email-from-staging-to-a-group-email) or [examples showing how to use interceptors](https://thepugautomatic.com/2012/08/abort-mail-delivery-with-rails-3-interceptors/) I figured there had to be a way to reuse callbacks.
+When working with ActionMailer (Rails 3) it feels so similar to how controllers work that I thought it was odd that I couldn't use callbacks such as `before_filter` or `after_filter`. While there are [drop in gems](https://thoughtbot.com/blog/delivering-all-email-from-staging-to-a-group-email) or [examples showing how to use interceptors](https://thepugautomatic.com/2012/08/abort-mail-delivery-with-rails-3-interceptors/) I figured there had to be a way to reuse callbacks.
 
 Luckily, I came across an accepted [pull request that includes callbacks in ActionMailer](https://github.com/rails/rails/pull/5372) but only for Rails 4. After reviewing the commit its very easy to add support for Rails 3 since all we need to do is include the `AbstractController::Callbacks` module in our mailer class and from there we can define our callbacks.
 
