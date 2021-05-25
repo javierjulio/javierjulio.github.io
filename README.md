@@ -1,5 +1,3 @@
-![CI Build](https://github.com/javierjulio/javierjulio.github.io/workflows/CI%20Build/badge.svg)
-
 ## javierjulio.com
 
 The source code for javierjulio.com, my website built with Jekyll and deployed on GitHub Pages. This is a conversion of my original site from the now archived [website](https://github.com/javierjulio/website) repo.
