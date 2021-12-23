@@ -1,3 +1,11 @@
+- name: Memory Game
+  url: https://javierjulio.com/memory-game/
+  description: A simple Memory game. Dark mode and mobile friendly.
+
+- name: Nonograms Game
+  url: https://javierjulio.com/nonograms-game/
+  description: Endless 5x5 up to 10x10 puzzles. Dark mode and mobile friendly.
+
 - name: RailsBridge NYC
   url: https://www.railsbridgenyc.org
   description: Organizing free workshops on Ruby and Rails in NYC.
