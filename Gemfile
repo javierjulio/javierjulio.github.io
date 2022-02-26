@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '~> 2.6.0'
+ruby '~> 3.0.0'
 
 gem 'github-pages', '223', group: :jekyll_plugins
 gem 'jekyll-autoprefixer'
