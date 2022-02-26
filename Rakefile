@@ -66,6 +66,7 @@ task test: :build do
       /9mmedia\.com/,
       /myfdb\.com/,
       /twitter\.com\/javierjulio/,
+      /codingvalue\.com/, # domain doesn't resolve anymore
     ],
     url_swap: {
       /^#{baseurl}/ => ""
