@@ -44,31 +44,28 @@ task s: :server
 task test: :build do
   run_html_proofer(
     cache: {
-      timeframe: '1w'
+      timeframe: {
+        external: '1w',
+        internal: '1w'
+      }
     },
-    check_html: true,
-    validation: {
-      report_eof_tags: true,
-      report_invalid_tags: true,
-      report_mismatched_tags: true,
-      report_missing_doctype: true,
-      report_missing_names: true
-    },
-    check_favicon: true,
-    check_img_http: true,
-    check_opengraph: true,
-    check_external_hash: true,
-    parallel: {
-      in_processes: 3
-    },
-    url_ignore: [
+    checks: [
+      'Links',
+      'Images',
+      'Scripts',
+      'Favicon',
+      'OpenGraph'
+    ],
+    ignore_urls: [
       /linkedin\.com/,
       /9mmedia\.com/,
       /myfdb\.com/,
       /twitter\.com\/javierjulio/,
       /codingvalue\.com/, # domain doesn't resolve anymore
+      /bryantwebconsulting\.com/, # no HTTPS
+      /pointbeing\.net/, # no HTTPS
     ],
-    url_swap: {
+    swap_urls: {
       /^#{baseurl}/ => ""
     }
   )
