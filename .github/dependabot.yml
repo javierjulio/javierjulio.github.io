@@ -7,7 +7,3 @@ updates:
     time: "12:00"
     timezone: America/New_York
   open-pull-requests-limit: 99
-  ignore:
-  - dependency-name: github-pages
-    versions:
-    - "212"
