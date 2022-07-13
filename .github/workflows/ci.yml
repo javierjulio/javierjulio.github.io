@@ -19,6 +19,12 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Cache HTMLProofer
+      id: cache-htmlproofer
+      uses: actions/cache@v3
+      with:
+        path: tmp/.htmlproofer
+        key: ${{ runner.os }}-htmlproofer
     - name: Run Tests
       run: |
         bundle exec rake
