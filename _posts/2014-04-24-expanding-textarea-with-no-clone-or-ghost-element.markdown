@@ -5,7 +5,7 @@ date:   2014-04-24
 redirect_from: /2014/04/24/expanding-textarea-with-no-clone-or-ghost-element/
 ---
 
-I've been working on a small project called [textarea-autosize](https://javierjulio.github.io/textarea-autosize/) for some time now that is a jQuery plugin for vertically expanding textareas through user input **without** using a clone or ghost element. The plugin is available on both [NPM](https://www.npmjs.org/package/textarea-autosize) and [Bower](https://bower.io/search/?q=textarea-autosize).
+I've been working on a small project called [textarea-autosize](https://javierjulio.github.io/textarea-autosize/) for some time now that is a jQuery plugin for vertically expanding textareas through user input **without** using a clone or ghost element. The plugin is available on both [NPM](https://www.npmjs.com/package/textarea-autosize) and [Bower](https://bower.io/search/?q=textarea-autosize).
 
 #### So why build this?
 
