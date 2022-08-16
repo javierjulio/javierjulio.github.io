@@ -64,6 +64,7 @@ task test: :build do
       /codingvalue\.com/, # domain doesn't resolve anymore
       /bryantwebconsulting\.com/, # no HTTPS
       /pointbeing\.net/, # no HTTPS
+      /thepugautomatic\.com/, # timing out on CI but is accessible
     ],
     swap_urls: {
       /^#{baseurl}/ => ""
