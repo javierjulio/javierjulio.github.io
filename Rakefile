@@ -65,6 +65,7 @@ task test: :build do
       /bryantwebconsulting\.com/, # no HTTPS
       /pointbeing\.net/, # no HTTPS
       /thepugautomatic\.com/, # timing out on CI but is accessible
+      /instagram\.com\/javierjulio/, # fails on CI with 429 status but not locally, unknown reason
     ],
     swap_urls: {
       /^#{baseurl}/ => ""
