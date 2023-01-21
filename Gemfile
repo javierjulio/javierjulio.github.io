@@ -6,3 +6,4 @@ gem 'github-pages', '227', group: :jekyll_plugins
 gem 'jekyll-autoprefixer'
 gem 'rake'
 gem 'html-proofer'
+gem 'webrick'

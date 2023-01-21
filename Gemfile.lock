@@ -267,6 +267,7 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
+    webrick (1.7.0)
     yell (2.2.2)
     zeitwerk (2.6.6)
 
@@ -278,6 +279,7 @@ DEPENDENCIES
   html-proofer
   jekyll-autoprefixer
   rake
+  webrick
 
 RUBY VERSION
    ruby 3.0.3p157
