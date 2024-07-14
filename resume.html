@@ -12,12 +12,22 @@ permalink: /resume/
 
 <h2 class="resume-section-heading">Experience</h2>
 
-<h3 class="job-title">Founding Engineer - <a href="https://www.jackpocket.com/">Jackpocket</a></h3>
+<h3 class="job-title">Staff Engineer, Founding Team - <a href="https://www.jackpocket.com/">Jackpocket</a></h3>
 <p class="job-date">Jun 2014 - Present</p>
 <ul>
+	<li>Built ACH funding and payouts with Synapse, then replaced by Dwolla & Plaid, each with an automated withdrawal system for user winnings and company funds.</li>
+	<li>Implemented credit card and ApplePay payments with my own Ruby SDKs (<a href="https://github.com/jackpocket/paysafe">Paysafe</a> and <a href="https://github.com/jackpocket/worldpay-cnp">Worldpay</a>) to support each.</li>
+	<li>Integrated OneTrust for CCPA compliance with automated data reporting and deletion.</li>
+	<li>Reduced test suite from 15 to 3 minutes in CI and less than 2 minutes locally with turbo_tests. Overall CI time reduced from 20 to 5 minutes.</li>
+	<li>Reduced deployment wait time (from PR merge to finish) from 45 minutes to less than 10 minutes, with trunk based development approach, parallel tests and feature flags (LaunchDarkly).</li>
+	<li>Secured 20+ repositories by replacing insecure GitHub <abbr title="Personal access tokens">PATs</abbr> with GitHub Apps to auto generate short lived tokens with fine grained permissions.</li>
+	<li>Implemented code coverage (Codecov) initially at 73% with gradual increase to current 95%.</li>
+	<li>Built automatic refunding system (Operations) for missed lottery ticket orders post drawing.</li>
+	<!--
+	<li>Improved ActiveAdmin frontend that I contributed back to OSS project. Joined ActiveAdmin as maintainer. Active since 2017.</li>
   <li>Stabilized our unit tests and then added full test and deployment automation using CircleCI. With just a git push, our tests would run and if successful would deploy to staging or production.</li>
   <li>Built a payout system that gives users the option of having a win paid to their bank account or debit card using Balanced Payments.</li>
-  <li>Built an automatic refund system (Operations app) where if a ticket slip is missed, customer is notified via email and refunded with Jackpocket credits.</li>
+	-->
 </ul>
 
 <h3 class="job-title">Contract - WordLab (<a href="https://www.jackpocket.com/">Jackpocket</a>)</h3>
