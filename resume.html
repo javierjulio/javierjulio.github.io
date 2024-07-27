@@ -15,12 +15,12 @@ permalink: /resume/
 <h3 class="job-title">Staff Engineer, Founding Team - <a href="https://jackpocket.com/">Jackpocket</a></h3>
 <p class="job-date">Jun 2014 - Present</p>
 <ul>
-	<li>Built ACH funding and payouts with Synapse, then replaced by Dwolla & Plaid, each with an automated withdrawal system for user winnings and company funds.</li>
+  <li>Built full ACH funding/payout flows initially with Synapse, then with Dwolla & Plaid, each with an automated withdrawal system for user winnings and company funds.</li>
 	<li>Implemented credit card and ApplePay payments with my own Ruby SDKs (<a href="https://github.com/jackpocket/paysafe">Paysafe</a> and <a href="https://github.com/jackpocket/worldpay-cnp">Worldpay</a>) to support each.</li>
 	<li>Integrated OneTrust for CCPA compliance with automated data reporting and deletion.</li>
-	<li>Reduced test suite from 15 to 3 minutes in CI and less than 2 minutes locally with turbo_tests. Overall CI time reduced from 20 to 5 minutes.</li>
-	<li>Reduced deployment wait time (from PR merge to finish) from 45 minutes to less than 10 minutes, with trunk based development approach, parallel tests and feature flags (LaunchDarkly).</li>
-	<li>Secured 20+ repositories by replacing insecure GitHub <abbr title="Personal access tokens">PATs</abbr> with GitHub Apps to auto generate short lived tokens with fine grained permissions.</li>
+	<li>Reduced test suite runtime from 15+ to 3 minutes in CI and to 1.5 minutes locally with turbo_tests. Overall <strong>CI time reduced from 20 to 4 minutes</strong> for faster PR delivery.</li>
+	<li>Reduced deployment wait time from 45 minutes to less than 10 by implementing trunk based development, parallel test suite and feature flags (LaunchDarkly).</li>
+	<li>Secured 20+ repositories by replacing insecure GitHub <abbr title="Personal access tokens">PATs</abbr> with organization based GitHub Apps to auto generate short lived tokens with fine grained permissions.</li>
 	<li>Implemented code coverage (Codecov) initially at 73% with gradual increase to current 95%.</li>
 	<li>Built automatic refunding system (Operations) for missed lottery ticket orders post drawing.</li>
 	<!--
