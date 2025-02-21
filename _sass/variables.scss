@@ -23,11 +23,9 @@ $h6-font-size: 1rem;
 
 $z-index-back-to-top-button: 10;
 
-$media-query-breakpoints: (
-  default: 0,
-  first: 40em,
-  second: 44em // ~700 for content
-);
+$media-query-breakpoint-default: 0;
+$media-query-breakpoint-first: 40em;
+$media-query-breakpoint-second: 44em; // ~700 for content
 
 $spacer: 1em !default;
 $spacers: (

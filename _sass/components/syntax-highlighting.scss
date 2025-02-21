@@ -96,7 +96,7 @@ pre code {
 }
 
 // DARK MODE
-@include color-scheme(dark) {
+@media (prefers-color-scheme: dark) {
   // This is the Monokai theme but using a darker background color.
   // https://github.com/jwarby/jekyll-pygments-themes/blob/master/monokai.css
   .highlight pre { background-color: #0c0d0d; }
