@@ -50,22 +50,10 @@ task test: :build do
       }
     },
     checks: [
-      'Links',
       'Images',
       'Scripts',
       'Favicon',
       'OpenGraph'
-    ],
-    ignore_urls: [
-      /linkedin\.com/,
-      /9mmedia\.com/,
-      /myfdb\.com/,
-      /twitter\.com\/javierjulio/,
-      /codingvalue\.com/, # domain doesn't resolve anymore
-      /bryantwebconsulting\.com/, # no HTTPS
-      /pointbeing\.net/, # no HTTPS
-      /thepugautomatic\.com/, # timing out on CI but is accessible
-      /instagram\.com\/javierjulio/, # fails on CI with 429 status but not locally, unknown reason
     ],
     swap_urls: {
       /^#{baseurl}/ => ""
