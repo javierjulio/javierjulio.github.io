@@ -1,13 +1,11 @@
 # Restart the server to see changes made to this file.
-# You should read the docs at https://github.com/vmg/redcarpet and probably
-# delete a bunch of stuff below if you don't need it.
-
+# Redcarpet documentation: https://github.com/vmg/redcarpet
 class ApplicationMarkdown < MarkdownRails::Renderer::Rails
-  # Reformats your boring punctuation like " and " into “ and ” so you can look
-  # and feel smarter. Read the docs at https://github.com/vmg/redcarpet#also-now-our-pants-are-much-smarter
+  # Reformats punctuation like " and " into “ and ” instead.
+  # https://github.com/vmg/redcarpet#also-now-our-pants-are-much-smarter
+  # https://daringfireball.net/projects/smartypants/
   # include Redcarpet::Render::SmartyPants
 
-  # Run `bundle add rouge` and uncomment the include below for syntax highlighting
   include MarkdownRails::Helper::Rouge
 
   def rouge_formatter
@@ -22,11 +20,9 @@ class ApplicationMarkdown < MarkdownRails::Renderer::Rails
     end
   end
 
-  # If you need access to ActionController::Base.helpers, you can delegate by uncommenting
-  # and adding to the list below. Several are already included for you in the `MarkdownRails::Renderer::Rails`,
-  # but you can add more here.
-  #
-  # To see a list of methods available run `bin/rails runner "puts ActionController::Base.helpers.public_methods.sort"`
+  # For access to `ActionController::Base.helpers`, uncomment the delegators below.
+  # Several are already included in `MarkdownRails::Renderer::Rails`, but you can add more here.
+  # Run `bin/rails runner "puts ActionController::Base.helpers.public_methods.sort"` for available methods.
   #
   # delegate \
   #   :request,
@@ -34,15 +30,12 @@ class ApplicationMarkdown < MarkdownRails::Renderer::Rails
   #   :turbo_frame_tag,
   # to: :helpers
 
-  # These flags control features in the Redcarpet renderer, which you can read
-  # about at https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use
-  # Make sure you know what you're doing if you're using this to render user inputs.
+  # Flags: https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use
   def enable
     [:fenced_code_blocks]
   end
 end
 
-# Setup markdown stacks to work with different template handler in Rails.
 MarkdownRails.handle :md, :markdown do
   ApplicationMarkdown.new
 end
