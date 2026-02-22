@@ -7,9 +7,46 @@
     <script>location="{PATH}"</script>
     <meta http-equiv="refresh" content="0; url={PATH}">
     <meta name="robots" content="noindex">
+    <style>
+      :root {
+        color-scheme: light dark;
+
+        --text-color: #334259;
+        --background-color: #fff;
+
+        @media (prefers-color-scheme: dark) {
+          --text-color: #fff;
+          --background-color: #242828;
+        }
+      }
+
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0 3.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a:link, a:visited, a:hover {
+        color: var(--text-color);
+        text-underline-offset: 3px;
+      }
+    </style>
   </head>
   <body>
     <h1>Redirecting&hellip;</h1>
-    <a href="{PATH}">Click here if you are not redirected.</a>
+    <a href="{PATH}">Click here if you are not redirected</a>
   </body>
 </html>
