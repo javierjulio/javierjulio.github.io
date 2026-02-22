@@ -38,12 +38,10 @@ if (button) {
   document.addEventListener('scroll', debounce(onScroll), { passive: true });
   onScroll();
 
-  if (document.documentElement.scrollIntoView) {
-    button.addEventListener('click', (event) => {
-      event.preventDefault()
-      document.documentElement.scrollIntoView({ behavior: 'smooth' })
-    })
-  }
+  button.addEventListener('click', (event) => {
+    event.preventDefault()
+    document.documentElement.scrollIntoView({ behavior: 'smooth' })
+  })
 
   button.addEventListener('pointerover', () => { clearTimeout(timeoutId) });
   button.addEventListener('pointerout', () => { timeoutId = setTimeout(updateBackToTopLink, 5000, 'fade-in', 'fade-out') });
