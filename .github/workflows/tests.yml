@@ -16,20 +16,18 @@ on:
   pull_request:
 
 jobs:
-  build:
+  test_suite:
     runs-on: ubuntu-latest
     name: Run tests
     steps:
       - uses: actions/checkout@v6
       - uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: true
       - name: Cache HTMLProofer
         id: cache-htmlproofer
         uses: actions/cache@v5
         with:
           path: tmp/.htmlproofer
           key: ${{ runner.os }}-htmlproofer
-      - name: Run tests
-        run: |
-          bundle exec rake
+      - run: bundle exec rake test
