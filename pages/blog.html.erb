@@ -1,0 +1,18 @@
+---
+layout: page
+title: Javier's Blog
+page_heading: Blog Archives
+---
+
+<ul class="unstyled-list">
+  <% site.resources.glob("blog/*.html.md").sort { |a, b| b.data["date"] <=> a.data["date"] }.each do |post| %>
+    <li class="margin-bottom-2x">
+      <h2 class="heading-4 margin-bottom-half">
+        <%= link_to post.data["title"], post.request_path %>
+      </h2>
+      <time class="post-date" datetime="<%= post.data["date"].strftime("%Y-%m-%d") %>">
+        <%= post.data["date"].strftime("%B %-d, %Y") %>
+      </time>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,23 @@
+---
+layout: page
+title: Recipes
+page_heading: Recipes
+redirect_from:
+  - /recipes/bell-pepper-chicken/
+  - /recipes/chicken-romano/
+  - /recipes/eggplant-fritters/
+  - /recipes/ensaladilla/
+  - /recipes/european-salad/
+  - /recipes/garlic-chicken/
+  - /recipes/steak-with-shallots-and-red-wine-vinegar/
+  - /recipes/spaghetti-alla-puttanesca/
+---
+
+<% site.resources.glob("recipes/*.html.md").each do |page| %>
+  <div class="margin-bottom-2x">
+    <h2 class="heading-4 margin-bottom-half">
+      <%= link_to page.data["title"], page.url %>
+    </h2>
+    <p><%= page.data["description"] %></p>
+  </div>
+<% end %>

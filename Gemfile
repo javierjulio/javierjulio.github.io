@@ -1,9 +1,14 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby file: '.ruby-version'
+ruby file: ".ruby-version"
 
-gem 'github-pages', '232', group: :jekyll_plugins
-gem 'jekyll-autoprefixer'
-gem 'rake'
-gem 'html-proofer'
-gem 'webrick'
+# Stand-alone Sitepress server and compiler.
+gem "sitepress", "5.0.0.beta1"
+
+# For the Sitepress development server.
+gem "webrick"
+
+gem "markdown-rails"
+gem "rake"
+gem "html-proofer"
+gem "rouge"

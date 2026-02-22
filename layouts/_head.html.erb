@@ -1,0 +1,12 @@
+<head>
+  <meta charset="utf-8">
+  <title><%= current_page.data.fetch("title", author_name) %></title>
+  <%= tag.meta(name: "description", content: current_page.data.fetch("description", site_description)) %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= favicon_link_tag "favicon.svg", rel: :icon, type: "image/svg+xml" %>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Merriweather:400,700|Inter:400,600&display=swap" %>
+  <%= stylesheet_link_tag "site" %>
+  <%= javascript_include_tag "site", defer: true %>
+  <link rel="canonical" href="<%= "#{site_url}#{current_page.request_path}" %>">
+  <%= auto_discovery_link_tag :rss, "/feed.xml", title: site_title %>
+</head>

@@ -1,0 +1,39 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <title type="html"><%= site_title %></title>
+  <subtitle><%= site_description %></subtitle>
+  <id><%= "#{site_url}/feed.xml" %></id>
+  <link href="<%= "#{site_url}/feed.xml" %>" rel="self" type="application/atom+xml"/>
+  <link href="<%= site_url %>" rel="alternate" type="text/html"/>
+  <icon><%= site_url + image_path("logo.svg") %></icon>
+  <generator uri="https://sitepress.cc" version="<%= Sitepress::VERSION %>">Sitepress</generator>
+  <updated><%= Time.now.utc.iso8601 %></updated>
+  <% site.resources.get("blog").children.each do |post| %>
+    <entry>
+      <title type="html"><%= post.data.fetch("title") %></title>
+      <id><%= "#{site_url}#{post.request_path}" %></id>
+      <link href="<%= "#{site_url}#{post.request_path}" %>" rel="alternate" type="text/html" title="<%= post.data.fetch("title") %>"/>
+      <published><%= post.data.fetch("date").iso8601 %></published>
+      <updated><%= post.data.fetch("date").iso8601 %></updated>
+      <author>
+        <name><%= author_name %></name>
+      </author>
+      <% if post.data["summary"].present? %>
+        <summary type="html">
+          <![CDATA[
+            <%= post.data["summary"] %>
+          ]]>
+        </summary>
+      <% end %>
+      <content type="html">
+        <![CDATA[
+          <%= render post %>
+        ]]>
+      </content>
+    </entry>
+  <% end %>
+</feed>
