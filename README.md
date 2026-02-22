@@ -11,28 +11,24 @@ The source code for [javierjulio.com](https://javierjulio.com), my website [buil
 
 ### Resources
 
-For icons [Remix Icon](https://remixicon.com) is used but [Feather](https://feathericons.com) is another option.
+For icons, I used [Remix Icon](https://remixicon.com) but [Feather Icons](https://feathericons.com) is another good option.
 
 For font inspiration:
 * https://tobiasahlin.com/typesource/
 * https://rsms.me/inter/
 
-For inspiration I looked to the following:
+For design and writing idea inspiration:
+* https://brianlovin.com
+* https://johno.com
 * https://colebemis.com
 * https://maggieappleton.com/drawinginvisibles1
 * https://jxnblk.com
-* https://johno.com
-* https://brianlovin.com
 * https://ibuildmyideas.com
 * https://justjavascript.com
 * http://mrmrs.io
-* https://refactoringui.com
 * http://maciejjasinski.com
 * http://christopherlang.com.au
 * https://facumontanaro.com
 * https://davemullenjnr.co.uk
 * https://morenodd.com
-* https://www.jonathandion.com
 * https://joeybright.com
-* https://liamm.nl
-* https://alemohamad.com/
