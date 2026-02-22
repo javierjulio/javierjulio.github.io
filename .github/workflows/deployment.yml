@@ -4,6 +4,15 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '.github/workflows/deployment.yml'
+      - 'assets/**'
+      - 'config/**'
+      - 'helpers/**'
+      - 'layouts/**'
+      - 'pages/**'
+      - 'Rakefile'
+      - 'Gemfile*'
   pull_request:
   workflow_dispatch:
 
