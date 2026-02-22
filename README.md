@@ -1,16 +1,13 @@
 ## javierjulio.com
 
-The source code for javierjulio.com, my website built with Jekyll and deployed on GitHub Pages. This is a conversion of my original site from the now archived [website](https://github.com/javierjulio/website) repo.
+The source code for [javierjulio.com](https://javierjulio.com), my website [built with Sitepress](https://sitepress.cc) and deployed on GitHub Pages. This is a conversion from the now archived [website](https://github.com/javierjulio/website) repository.
 
 ### Development
 
 * `bundle install`
-* `bundle exec rake` to run tests
-* `bundle exec rake s` for a local server
-
-### Tests
-
-Run `bundle exec rake` to run tests with [html-proofer](https://github.com/gjtorikian/html-proofer) gem.
+* `rake test` to run [html-proofer](https://github.com/gjtorikian/html-proofer) tests
+* `rake server` for a local development server with livereload
+* `rake build` to compile site into `build` directory
 
 ### Resources
 
