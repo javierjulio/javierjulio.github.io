@@ -5,7 +5,7 @@ date: 2011-09-18
 redirect_from: /2011/09/18/recovering-deleted-files-from-svn/
 ---
 
-Recently, I had accidentally deleted a project file from SVN that was still required. Searching on how to recover it I came across different methods (mainly using svn copy) but [an example using svn merge](http://pointbeing.net/weblog/2010/02/recovering-a-deleted-file-from-subversion.html) is what worked for me. All you need is the revision number that deleted the file(s) that you want back.
+Recently, I had accidentally deleted a project file from SVN that was still required. Searching on how to recover it I came across different methods (mainly using svn copy) but [an example using svn merge](https://pointbeing.net/weblog/2010/02/recovering-a-deleted-file-from-subversion.html) is what worked for me. All you need is the revision number that deleted the file(s) that you want back.
 
 The following is the command format you'll want to use:
 

@@ -17,4 +17,4 @@ The best part: within four months of starting the course (it hadn't finished!) I
 
 From there, ColdFusion took me to a few different jobs. In 2007, I moved to New York City to find better work. Since then, I've moved away from ColdFusion professionally, but I continue to work with it in my spare time to see what's new. ColdFusion is a great language with a friendly community that I'm proud to be a part of. I can't wait for its 10th release!
 
-This post was inspired by [Steve Bryant's suggestion](http://www.bryantwebconsulting.com/blog/index.cfm/2011/7/20/August-1-2011-is-How-I-Started-ColdFusion-Day) to make August 1, 2011 the "How I Got Started in ColdFusion" day.
+This post was inspired by [Steve Bryant's suggestion](https://www.bryantwebconsulting.com/blog/index.cfm/2011/7/20/August-1-2011-is-How-I-Started-ColdFusion-Day) to make August 1, 2011 the "How I Got Started in ColdFusion" day.
