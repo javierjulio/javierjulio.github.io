@@ -5,7 +5,7 @@ BUILD_DIR = "build"
 
 def run_command(command)
   puts "+ #{command}"
-  system command
+  system command, exception: true
 end
 
 task :build do
