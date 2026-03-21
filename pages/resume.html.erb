@@ -17,21 +17,32 @@ title: Javier Julio
 
 <h2 class="resume-section-heading">Experience</h2>
 
-<h3 class="job-title">Staff Engineer, Founding Team - <a href="https://jackpocket.com/">Jackpocket</a></h3>
-<p class="job-date">Jun 2014 - Present</p>
+<h3 class="job-title">Senior Lead Software Engineer - <a href="https://www.draftkings.com">DraftKings</a></h3>
+<p class="job-date">May 2024 - Present</p>
 <ul>
-  <li>Built full ACH funding/payout flows initially with Synapse, then with Dwolla & Plaid, each with an automated withdrawal system for user winnings and company funds.</li>
-  <li>Implemented credit card and ApplePay payments with my own Ruby SDKs (<a href="https://github.com/jackpocket/paysafe">Paysafe</a> and <a href="https://github.com/jackpocket/worldpay-cnp">Worldpay</a>) to support each.</li>
-  <li>Integrated OneTrust for CCPA compliance with automated data reporting and deletion.</li>
-  <li>Reduced test suite runtime from 15+ to 3 minutes in CI and to 1.5 minutes locally with turbo_tests. Overall <strong>CI time reduced from 20 to 4 minutes</strong> for faster PR delivery.</li>
-  <li>Reduced deployment wait time from 45 minutes to less than 10 by implementing trunk based development, parallel test suite and feature flags (LaunchDarkly).</li>
-  <li>Secured 20+ repositories by replacing insecure GitHub <abbr title="Personal access tokens">PATs</abbr> with organization based GitHub Apps to auto generate short lived tokens with fine grained permissions.</li>
-  <li>Implemented code coverage (Codecov) initially at 73% with gradual increase to current 95%.</li>
+  <li>Led a cross team security initiative by upgrading ImageMagick from v6 to v7, remediating 30+ critical vulnerabilities and unblocking 3 <abbr title="End-of-life">EOL</abbr> technologies, enabling a successful, zero downtime Ruby upgrade from 3.0 to 3.4 and reducing Sidekiq memory spikes from 28GB to a stable 16GB.</li>
+  <li>Established regression safeguards by implementing ticket scantron image comparison testing, ensuring safe adoption of ImageMagick v7 updates for critical ticket-processing workflow.</li>
+  <li>Drove containerization efficiency initiatives, reducing Docker image sizes by 80%+ (services) and 50% (monolith), improving security and deployment speed.</li>
+  <li>Partnered with leadership to reduce infrastructure and operational costs, decommissioning legacy systems to support company-wide <abbr title="Earnings Before Interest, Taxes, Depreciation, and Amortization">EBITDA</abbr> targets.</li>
+  <li>Defined and implemented observability standards by introducing Datadog SLOs/SLIs for the Lottery Rails backend, improving service reliability, alerting quality, and incident response.</li>
+</ul>
+
+<h3 class="job-title">Staff Engineer, Founding Team - <a href="https://jackpocket.com/">Jackpocket</a></h3>
+<p class="job-date">Jun 2014 - May 2024</p>
+<ul>
+  <li>Joined founding team and scaled company to over 200 employees, culminating in a <strong>$750M acquisition by DraftKings</strong>.</li>
+  <li>Architected and built end-to-end ACH payment and withdrawal infrastructure (with Balanced, Synapse and then Dwolla & Plaid), processing <strong>6-figure daily transaction volume</strong> for each flow.</li>
+  <li>Implemented credit card (<a href="https://github.com/jackpocket/paysafe">Paysafe</a>) and ApplePay (<a href="https://github.com/jackpocket/worldpay-cnp">Worldpay</a>) payments and led PayPal and Venmo integrations, providing more varied options in a restrictive environment.</li>
+  <li>Reduced CI pipeline time from 20 to 4 minutes and test suite from 18 to 2 minutes (1 minute locally) with parallel execution, significantly accelerating engineering velocity.</li>
+  <li>Cut monolith deployment wait time from 45+ to 10 minutes max with trunk-based development, parallel testing, and feature flags.</li>
+  <li>Implemented organization-wide security and code quality automation workflows (linting, secrets detection, static analysis, typos), improving reliability across 20+ repositories.</li>
+  <li>Eliminated insecure GitHub <abbr title="Personal access token">PAT</abbr> usage with GitHub App-based auth, improving security with short-lived, scoped tokens.</li>
+  <li>Increased code coverage from 73% to 97%, improving monolith reliability and release confidence.</li>
   <li>Built automatic refunding system (Operations) for missed lottery ticket orders post drawing.</li>
+  <li>Integrated OneTrust for CCPA compliance with automated user data reporting and deletion workflows.</li>
+  <li>Core contributor and maintainer of <a href="https://activeadmin.info">ActiveAdmin</a> since 2017.</li>
   <!--
-  <li>Improved ActiveAdmin frontend that I contributed back to OSS project. Joined ActiveAdmin as maintainer. Active since 2017.</li>
   <li>Stabilized our unit tests and then added full test and deployment automation using CircleCI. With just a git push, our tests would run and if successful would deploy to staging or production.</li>
-  <li>Built a payout system that gives users the option of having a win paid to their bank account or debit card using Balanced Payments.</li>
   -->
 </ul>
 
