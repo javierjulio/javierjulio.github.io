@@ -254,7 +254,6 @@ GEM
       concurrent-ruby (~> 1.0)
     uri (1.1.1)
     useragent (0.16.11)
-    webrick (1.9.2)
     yell (2.2.2)
     zeitwerk (2.7.5)
 
@@ -267,7 +266,6 @@ DEPENDENCIES
   rake
   rouge
   sitepress (= 5.0.0.beta4)
-  webrick
 
 RUBY VERSION
   ruby 3.4.7p58
