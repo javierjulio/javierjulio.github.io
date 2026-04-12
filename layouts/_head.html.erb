@@ -7,6 +7,6 @@
   <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Merriweather:400,700|Inter:400,600&display=swap" %>
   <%= stylesheet_link_tag "site" %>
   <%= javascript_include_tag "site", defer: true %>
-  <link rel="canonical" href="<%= "#{site_url}#{current_page.request_path}" %>">
+  <%= tag.link(rel: :canonical, href: "#{site_url}#{current_page.request_path}") %>
   <%= auto_discovery_link_tag :rss, "/feed.xml", title: site_title %>
 </head>

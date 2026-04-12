@@ -1,5 +1,5 @@
 <div class="site-header content-container">
   <%= link_to root_path, class: "icon-link", title: site_title do %>
-    <%= File.read("assets/images/logo.svg").html_safe %>
+    <%= File.read("assets/images/logo.svg").html_safe %> <%# herb:disable erb-no-unsafe-raw %>
   <% end %>
 </div>

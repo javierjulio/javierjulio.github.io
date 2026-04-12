@@ -56,9 +56,9 @@ title: Javier Julio
 <% featured_projects.each do |project| %>
   <div>
     <h3 class="font-size-base margin-bottom-half">
-      <%= link_to project[:name].html_safe, project[:url] %>
+      <%= link_to project[:name].html_safe, project[:url] %> <%# herb:disable erb-no-unsafe-raw %>
     </h3>
-    <p class="margin-bottom-0"><%= project[:description].html_safe %></p>
+    <p class="margin-bottom-0"><%= project[:description].html_safe %></p> <%# herb:disable erb-no-unsafe-raw %>
   </div>
 <% end %>
 </div>
