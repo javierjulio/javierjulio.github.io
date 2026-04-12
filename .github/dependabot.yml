@@ -10,6 +10,7 @@ updates:
     sitepress:
       patterns:
         - "sitepress*"
+        - "markdown-rails"
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
