@@ -27,7 +27,7 @@ end
 task serve: :server
 task s: :server
 
-task test: :build do
+task html_proofer: :build do
   HTMLProofer.check_directory(
     BUILD_DIR,
     cache: { timeframe: { internal: "1w" } },
@@ -35,5 +35,12 @@ task test: :build do
     disable_external: true # disables external link checking
   ).run
 end
+
+task :herb do
+  run_command "bundle exec herb analyze"
+  run_command "bundle exec herb lint"
+end
+
+task test: [:html_proofer, :herb]
 
 task default: :test
