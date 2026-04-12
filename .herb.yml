@@ -1,0 +1,9 @@
+files:
+  exclude:
+    - 'build/**/*'
+    - 'tmp/**/*'
+linter:
+  failLevel: hint
+  rules:
+    html-require-script-nonce:
+      enabled: false
