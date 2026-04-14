@@ -5,5 +5,7 @@ files:
 linter:
   failLevel: hint
   rules:
+    actionview-no-silent-helper:
+      enabled: false # False positive: https://github.com/marcoroth/herb/issues/1629
     html-require-script-nonce:
       enabled: false
