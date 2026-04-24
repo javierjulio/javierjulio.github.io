@@ -76,7 +76,7 @@ GEM
     crass (1.0.6)
     date (3.5.1)
     drb (2.2.3)
-    erb (6.0.3)
+    erb (6.0.4)
     erubi (1.13.1)
     ethon (0.18.0)
       ffi (>= 1.15.0)
