@@ -19,15 +19,19 @@ For font inspiration:
 
 For design and writing idea inspiration:
 * https://brianlovin.com
+* https://paco.me
+* https://adrianmato.com
+* https://jakub.kr
+* https://www.chrisrodriguez.me
 * https://johno.com
+* https://joelhooks.com
 * https://colebemis.com
-* https://maggieappleton.com/drawinginvisibles1
+* https://maggieappleton.com
 * https://jxnblk.com
 * https://ibuildmyideas.com
-* https://justjavascript.com
 * http://mrmrs.io
 * http://maciejjasinski.com
-* http://christopherlang.com.au
+* https://www.alexvanderzon.com
 * https://facumontanaro.com
 * https://davemullenjnr.co.uk
 * https://morenodd.com
