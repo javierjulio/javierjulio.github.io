@@ -5,9 +5,9 @@ The source code for [javierjulio.com](https://javierjulio.com), my website [buil
 ### Development
 
 * `bundle install`
-* `rake test` to run [html-proofer](https://github.com/gjtorikian/html-proofer) tests
-* `rake server` for a local development server with livereload
-* `rake build` to compile site into `build` directory
+* `bundle exec rake test` to run [html-proofer](https://github.com/gjtorikian/html-proofer) tests
+* `bundle exec rake server` for a local development server with livereload
+* `bundle exec rake build` to compile site into `build` directory
 
 ### Resources
 
