@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chicken Milanesas
-description: Chicken breast covered with breadcrumbs, parmigiano, and thyme leaves. This dish is lightly fried or baked for a healthier alternative.
+description: Lightly fried or baked for a healthier alternative.
 ---
 
 The secret for this recipe is using [Panko](https://en.wikipedia.org/wiki/Panko) (Japanese breadcrumbs). As an easy side dish I recommend my [Farfalle with Spring Onions](/recipes/farfalle-with-spring-onions) recipe.

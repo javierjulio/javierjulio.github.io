@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paprika Chicken
-description: Boneless chicken breast baked and covered in paprika and butter.
+description: Baked chicken in paprika and butter.
 ---
 
 Baked chicken breast covered in paprika and butter that comes out very tender. This goes great alongside a side dish of rice or vegetables.

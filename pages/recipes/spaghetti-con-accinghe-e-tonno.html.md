@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spaghetti con Accinghe e Tonno
-description: Spaghetti pasta served with anchovies and tuna for a great seafood taste along with parsley, garlic, and white wine.
+description: A great seafood taste with parsley, garlic, and white wine.
 ---
 
 ### Ingredients

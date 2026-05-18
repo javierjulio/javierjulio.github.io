@@ -8,8 +8,19 @@ def run_command(command)
   system command, exception: true
 end
 
-task :build do
+task :tailwindcss_watch do
+  run_command "tailwindcss --watch --input ./tailwind.css --output ./assets/stylesheets/site.css"
+end
+
+task :tailwindcss_minify do
+  run_command "tailwindcss --minify --input ./tailwind.css --output ./assets/stylesheets/site.css"
+end
+
+task :clear_build do
   run_command "rm -rf #{BUILD_DIR}"
+end
+
+task build: [:clear_build, :tailwindcss_minify] do
   run_command "bundle exec sitepress compile --output-path #{BUILD_DIR}"
   html = File.read("layouts/redirect_template.html")
   Sitepress::Site.new.resources.each do |resource|

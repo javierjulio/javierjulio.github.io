@@ -250,6 +250,11 @@ GEM
       listen (>= 3.0)
     string-format (0.2.0)
     stringio (3.2.0)
+    tailwindcss-rails (4.4.0)
+      railties (>= 7.0.0)
+      tailwindcss-ruby (~> 4.0)
+    tailwindcss-ruby (4.3.0-arm64-darwin)
+    tailwindcss-ruby (4.3.0-x86_64-linux-gnu)
     thor (1.5.0)
     traces (0.18.2)
     tsort (0.2.0)
@@ -275,6 +280,7 @@ DEPENDENCIES
   rake
   rouge
   sitepress (= 5.0.0.beta4)
+  tailwindcss-rails
 
 RUBY VERSION
   ruby 3.4.7p58

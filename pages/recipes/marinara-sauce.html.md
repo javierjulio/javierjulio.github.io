@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Marinara or Arrabbiata Sauce
-description: A simple marinara sauce for pasta or pizza.
+description: Simple marinara sauce for pasta or pizza.
 ---
 
 This is a simple marinara or arrabbiata (spicy) sauce for pasta or pizza.

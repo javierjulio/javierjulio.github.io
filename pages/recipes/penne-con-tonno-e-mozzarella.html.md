@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Penne con Tonno e Mozzarella
-description: A cheesy, meaty dish. Similar to Linguine con Tonno e Olive but no olives, parsley or lemon juice.
+description: A cheesy, meaty, pasta dish.
 ---
 
 What I love most about this dish is that it has a chewy, rewarding texture and is really full of flavor. You'll love the melted mozzarella with the tuna.

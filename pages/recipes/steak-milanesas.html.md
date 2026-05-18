@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steak Milanesas
-description: Thin strips of marinated, breaded, marinated steak that are lightly fried.
+description: Lightly fried, thin strips of marinated and breaded steak.
 ---
 
 The secret for this recipe is using Japanese breadcrumbs called [Panko](https://en.wikipedia.org/wiki/Panko). Packaged breadcrumbs or making your own just doesn't come close. Trust me. I've tried it all. I highly recommend preparing these in advance and letting them marinate for several hours or better yet overnight.

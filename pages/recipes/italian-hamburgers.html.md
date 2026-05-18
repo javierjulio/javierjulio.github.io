@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Italian Style Hamburgers
-description: Hamburgers stuffed with spring onions, Italian parsley, basil and garlic.
+description: With spring onions, parsley, basil and garlic.
 ---
 
 Once you have hamburger meat mixed with herbs like basil, garlic and spring onions, its hard to go back. Prepare the hamburgers in advance if you can but if not they taste great cooked as soon as you make it. These make excellent leftovers as they taste even better the next day.

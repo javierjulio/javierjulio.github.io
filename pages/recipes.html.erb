@@ -11,13 +11,21 @@ redirect_from:
   - /recipes/garlic-chicken/
   - /recipes/steak-with-shallots-and-red-wine-vinegar/
   - /recipes/spaghetti-alla-puttanesca/
+  - /recipes/broccoli-with-butter-lemon-sauce/
+  - /recipes/marinated-steak/
 ---
 
-<% site.resources.glob("recipes/*.html.md").each do |page| %>
-  <div class="margin-bottom-2x">
-    <h2 class="heading-4 margin-bottom-half">
-      <%= link_to page.data["title"], page.url %>
-    </h2>
-    <p><%= page.data["description"] %></p>
-  </div>
-<% end %>
+<ul class="mt-10 flex flex-col gap-2">
+  <% site.resources.glob("recipes/*.html.md").each do |page| %>
+    <li>
+      <%= link_to page.request_path, class: "-mx-3 flex flex-col gap-1 rounded-md p-3 no-underline hover:bg-zinc-100 dark:hover:bg-zinc-800/50" do %>
+        <div class="w-full font-medium leading-tight">
+          <%= page.data[:title] %>
+        </div>
+        <div class="text-zinc-500">
+          <%= page.data[:description] %>
+        </div>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

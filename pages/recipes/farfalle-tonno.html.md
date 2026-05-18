@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Farfalle Tonno
-description: Served with spring onions, lemon juice and zest, black olives, tuna, roasted pimientos and basil.
+description: With spring onions, lemon, black olives, tuna, and basil.
 ---
 
 ### Ingredients

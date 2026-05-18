@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rigatoni Italiano
-description: Called "Greek Pasta" at home because of its combination of feta cheese, fresh tomatoes, and basil.
+description: With feta cheese, fresh tomatoes, and basil.
 ---
 
 We've also called this "Greek Pasta" at home. It has great flavor while being easy and fast to make. You can prepare all the ingredients while the pasta is boiling.

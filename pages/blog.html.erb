@@ -4,15 +4,17 @@ title: Javier's Blog
 page_heading: Blog Archives
 ---
 
-<ul class="unstyled-list">
-  <% site.resources.glob("blog/*.html.md").sort { |a, b| b.data["date"] <=> a.data["date"] }.each do |post| %>
-    <li class="margin-bottom-2x">
-      <h2 class="heading-4 margin-bottom-half">
-        <%= link_to post.data["title"], post.request_path %>
-      </h2>
-      <time class="post-date" datetime="<%= post.data["date"].strftime("%Y-%m-%d") %>">
-        <%= post.data["date"].strftime("%B %-d, %Y") %>
-      </time>
+<ul class="mt-10 flex flex-col gap-2">
+  <% site.resources.glob("blog/*.html.md").sort { |a, b| b.data["date"] <=> a.data["date"] }.each do |page| %>
+    <li>
+      <%= link_to page.request_path, class: "-mx-3 flex flex-col gap-1 rounded-md p-3 no-underline hover:bg-zinc-100 dark:hover:bg-zinc-800/50" do %>
+        <span class="w-full font-medium leading-tight">
+          <%= page.data["title"] %>
+        </span>
+        <%= tag.time datetime: page.data[:date].strftime("%Y-%m-%d"), class: "text-zinc-500" do %>
+          <%= page.data[:date].strftime("%B %-d, %Y") %>
+        <% end %>
+      <% end %>
     </li>
   <% end %>
 </ul>

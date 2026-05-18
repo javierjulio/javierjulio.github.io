@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fusilli Mozzarella
-description: It's like pizza but with pasta! Served with tomatoes, anchovies, capers, basil and chunks of melted mozzarella cheese.
+description: Naturally salty with tomatoes and chunks of melted mozzarella.
 ---
 
 If you love a traditional Margherita pizza you will enjoy this. It's got so much in common because the chunks of mozzarella melt with the cooked pasta.

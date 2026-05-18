@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tortellini Rosa
-description: Frequent favorite. Tortellini pasta served with tomato and alfredo sauce that has parmesan cheese, basil, garlic and shallots.
+description: Pasta with a mix of tomato and alfredo sauce.
 ---
 
 ### Ingredients

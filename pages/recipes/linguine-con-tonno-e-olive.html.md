@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linguine con Tonno e Olive
-description: A flavorful mediterranean dish with plenty of tuna, olives, anchovies, capers and parsley.
+description: A flavorful mediterranean dish.
 ---
 
 Tuna, olives, capers, anchovies... this dish has it all. Very mediterranean. Naturally salty. Super easy to make. All you have to do is chop the ingredients and thats it. No sauce to cook. Once the pasta is done boiling you just throw everything in together and mix well. If you like a particular ingredient feel free to add more. No amount is set in stone. What I have here is what I prefer.
