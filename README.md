@@ -22,6 +22,13 @@ For design and writing idea inspiration:
 * https://paco.me
 * https://adrianmato.com
 * https://jakub.kr
+* https://emilkowal.ski
+* https://jonathontoon.com
+* https://aaronmoodie.com
+* https://ambrosino.io
+* https://nelson.co
+* https://pqoqubbw.dev
+* https://balajmarius.com
 * https://www.chrisrodriguez.me
 * https://johno.com
 * https://joelhooks.com
@@ -36,3 +43,5 @@ For design and writing idea inspiration:
 * https://davemullenjnr.co.uk
 * https://morenodd.com
 * https://joeybright.com
+* https://www.austinvalleskey.com
+* https://www.ardakaracizmeli.com
