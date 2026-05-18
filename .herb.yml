@@ -5,5 +5,7 @@ files:
 linter:
   failLevel: hint
   rules:
+    erb-no-javascript-tag-helper:
+      enabled: false
     html-require-script-nonce:
       enabled: false

@@ -1,9 +1,3 @@
-document.documentElement.classList.toggle(
-  "dark",
-  localStorage.theme === "dark" ||
-    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-);
-
 const copyrightYear = document.getElementById("js-copyright-year");
 if (copyrightYear) {
   copyrightYear.textContent = new Date().getFullYear();
