@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="md:pe-30">
 <div class="mt-20 flex items-center gap-4">
-  <%= link_to root_path, class: "block size-18 pointer-events-auto", aria_label: "Home" do %>
+  <%= link_to root_path, class: "block size-18 pointer-events-auto", aria: { label: "Home" } do %>
     <%= image_tag 'javier.jpg', alt: author_name, size: 250, decoding: 'async', class: 'rounded-full size-18 bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10' %>
   <% end %>
   <div class="flex flex-col gap-2">
@@ -40,7 +40,7 @@ redirect_from:
 %>
 <nav class="flex mt-6 gap-4">
   <% links.each do |link| %>
-    <%= link_to link[:url], class: "p-1 -m-1 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors", aria_label: link[:label] do %>
+    <%= link_to link[:url], class: "p-1 -m-1 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors", aria: { label: link[:label] } do %>
       <%= render "shared/svgs/#{link[:label].downcase}", size: "24" %>
     <% end %>
   <% end %>

@@ -6,7 +6,7 @@ title: Javier Julio
 <div class="max-w-3xl mx-auto px-4 sm:px-6">
 
 <div class="mt-12 print:mt-0 flex items-center gap-4">
-  <%= link_to root_path, class: "print:hidden block h-16 w-16 pointer-events-auto", aria_label: "Home" do %>
+  <%= link_to root_path, class: "print:hidden block h-16 w-16 pointer-events-auto", aria: { label: "Home" } do %>
     <%= image_tag 'javier.jpg', alt: author_name, size: 250, decoding: 'async', class: 'rounded-full h-16 w-16 bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10' %>
   <% end %>
   <div class="flex flex-col gap-2">
