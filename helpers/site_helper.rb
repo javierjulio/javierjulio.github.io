@@ -19,6 +19,4 @@ module SiteHelper
   def url_host(url) = URI.parse(url).host.gsub("www.", "")
 
   def location_name = "Brooklyn, NY"
-
-  def resume_path = "/resume/"
 end

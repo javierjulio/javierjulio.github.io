@@ -1,4 +1,9 @@
 module PageHelper
+  def blog_path = "/blog/"
+  def presentations_path = "/presentations/"
+  def recipes_path = "/recipes/"
+  def resume_path = "/resume/"
+
   def link_to_page(page)
     link_to page.data.fetch("title", page.request_path), page.request_path
   end

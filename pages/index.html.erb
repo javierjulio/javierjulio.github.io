@@ -129,10 +129,18 @@ redirect_from:
 
 <p class="mt-10">A little more about me:</p>
 <ul class="list-disc mt-2 ps-6 space-y-1">
-  <li><a href="/resume" class="link-base">Resume</a></li>
-  <li><a href="/recipes" class="link-base">Recipes</a></li>
-  <li>Some older <a href="/presentations" class="link-base">presentations</a> I've given</li>
-  <li><a href="/blog" class="link-base">Blog archives</a></li>
+  <li>
+    <%= link_to "Resume", resume_path, class: "link-base" %>
+  </li>
+  <li>
+    <%= link_to "Recipes", recipes_path, class: "link-base" %>
+  </li>
+  <li>
+    <%= link_to "Presentations", presentations_path, class: "link-base" %>
+  </li>
+  <li>
+    <%= link_to "Blog", blog_path, class: "link-base" %>
+  </li>
 </ul>
 
 </div>
