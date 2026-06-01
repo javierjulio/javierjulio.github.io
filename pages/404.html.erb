@@ -1,0 +1,35 @@
+---
+layout: standalone
+title: Javier Julio
+---
+
+<div class="max-w-3xl mx-auto px-4 sm:px-6">
+  <div class="mt-20 flex items-center gap-4">
+    <%= link_to root_path, class: "block size-18 pointer-events-auto", aria: { label: "Home" } do %>
+      <%= image_tag 'javier.jpg', alt: author_name, size: 250, decoding: 'async', class: 'rounded-full size-18 bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10' %>
+    <% end %>
+    <div class="flex flex-col gap-2">
+      <h1 class="font-display text-3xl font-bold text-zinc-800 sm:text-3xl dark:text-zinc-100">
+        <%= author_name %>
+      </h1>
+      <h2 class="text-xs uppercase font-semibold text-zinc-600 dark:text-zinc-400">Software Engineer</h2>
+    </div>
+  </div>
+
+  <div class="flex h-full items-center justify-center py-32">
+    <div class="flex flex-col items-center">
+      <p class="text-base font-semibold text-zinc-400 dark:text-zinc-500">
+        404
+      </p>
+      <h1 class="mt-4 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+        Page not found
+      </h1>
+      <p class="mt-4 text-base text-center text-zinc-600 dark:text-zinc-400">
+        Sorry, we couldn't find the page you're looking for.
+      </p>
+      <div>
+        <%= link_to "Go back home", root_path, class: "inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-100 font-medium text-zinc-900 hover:bg-zinc-200 active:bg-zinc-200 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 mt-4" %>
+      </div>
+    </div>
+  </div>
+</div>
