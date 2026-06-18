@@ -8,9 +8,9 @@ module SiteHelper
   def site_title = author_name
   def site_description
     <<~DESCRIPTION.squish
-      A Brooklyn based full stack developer with an eye for
-      design and details. Currently, designing, building and
-      automating solutions at Jackpocket in NYC.
+      Javier Julio is a full-stack software engineer and
+      open-source maintainer who builds reliable foundations
+      for growing products and engineering teams.
     DESCRIPTION
   end
 
