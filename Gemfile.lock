@@ -100,8 +100,8 @@ GEM
       fiber-storage
     fiber-storage (1.0.1)
     hashery (2.1.2)
-    herb (0.10.3-arm64-darwin)
-    herb (0.10.3-x86_64-linux-gnu)
+    herb (0.10.4-arm64-darwin)
+    herb (0.10.4-x86_64-linux-gnu)
     html-proofer (5.2.2)
       addressable (~> 2.3)
       async (~> 2.1)
