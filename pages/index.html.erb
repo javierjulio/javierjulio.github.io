@@ -41,7 +41,7 @@ redirect_from:
 <nav class="flex mt-6 gap-4">
   <% links.each do |link| %>
     <%= link_to link[:url], class: "p-1 -m-1 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors", aria: { label: link[:label] } do %>
-      <%= render "shared/svgs/#{link[:label].downcase}", size: "24" %>
+      <%= render "shared/svgs/#{link[:label].downcase}", size: "24" %><%# herb:disable actionview-no-dynamic-partial-path %>
     <% end %>
   <% end %>
 </nav>
@@ -80,10 +80,10 @@ redirect_from:
   <li class="group relative flex flex-col items-start">
     <h2 class="text-base font-semibold text-zinc-800 dark:text-zinc-100">
       <div class="absolute -inset-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:rounded-lg dark:bg-zinc-800/50"></div>
-      <a href="<%= project[:url] %>">
+      <%= link_to project[:url] do %>
         <span class="absolute -inset-4 z-20 sm:rounded-lg"></span>
         <span class="relative z-10"><%= project[:name] %></span>
-      </a>
+      <% end %>
     </h2>
     <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"><%= project[:description] %></p>
     <p class="relative z-10 mt-4 flex gap-1 text-sm font-medium text-zinc-400 transition-colors group-hover:text-teal-500 dark:text-zinc-200">

@@ -2,6 +2,7 @@ files:
   exclude:
     - 'build/**/*'
     - 'tmp/**/*'
+framework: actionview
 linter:
   failLevel: hint
   rules:
