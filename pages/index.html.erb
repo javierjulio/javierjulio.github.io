@@ -36,8 +36,7 @@ redirect_from:
  {label: "LinkedIn",
   url: linkedin_profile},
  {label: "Email",
-  url: "mailto:#{author_email}"}]
-%>
+  url: "mailto:#{author_email}"}] %>
 <nav class="flex mt-6 gap-4">
   <% links.each do |link| %>
     <%= link_to link[:url], class: "p-1 -m-1 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors", aria: { label: link[:label] } do %>
@@ -73,8 +72,7 @@ redirect_from:
   description: "An automated, tested script to configure my Mac and dotfiles."},
  {name: "Humble Bundle Exporter",
   url: "https://github.com/javierjulio/humble-bundle-key-exporter",
-  description: "Bookmarklet to export Humble Bundle data to JSON. 🎮"}]
-%>
+  description: "Bookmarklet to export Humble Bundle data to JSON. 🎮"}] %>
 <ul role="list" class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 <% featured_projects.each do |project| %>
   <li class="group relative flex flex-col items-start">
