@@ -8,4 +8,5 @@ gem "rake"
 gem "html-proofer"
 gem "rouge"
 gem "herb"
+gem "parallel" # required by Herb but for some reason is not a dependency
 gem "tailwindcss-rails"
