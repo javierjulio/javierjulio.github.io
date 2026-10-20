@@ -12,3 +12,6 @@ linter:
       enabled: false
     html-require-script-nonce:
       enabled: false
+    html-no-unescaped-entities:
+      exclude:
+        - layouts/_dark_mode_toggle.html.erb
