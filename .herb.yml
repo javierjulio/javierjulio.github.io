@@ -8,7 +8,7 @@ linter:
   rules:
     erb-no-javascript-tag-helper:
       enabled: false
-    html-require-script-nonce:
-      enabled: false
     html-no-space-in-tag:
+      enabled: false
+    html-require-script-nonce:
       enabled: false
